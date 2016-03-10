@@ -1,2 +1,7 @@
 #+TITLE: RadioJyBy
-#+DESCRIPTION: Plays your local music (music player like) while interleaving it with recorded personal comments (DJ like) to simulate the feel of a radio. 
+
+Plays your local music (music player like) while interleaving it with recorded personal comments (DJ like) to simulate the feel of a radio. 
+
+Prototype in Python for desktop.
+Final application should be for Desktop and Mobile devices.
+
