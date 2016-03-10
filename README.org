@@ -5,3 +5,4 @@ Plays your local music (music player like) while interleaving it with recorded p
 Prototype in Python for desktop.
 Final application should be for Desktop and Mobile devices.
 
+See the wiki for more information about the project(ions).
