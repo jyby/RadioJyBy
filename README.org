@@ -1,8 +1,105 @@
 #+TITLE: RadioJyBy
+#+AUTHOR: Jeremy "Le JyBy"
 
-Plays your local music (music player like) while interleaving it with recorded personal comments (DJ like) to simulate the feel of a radio. 
+* Descriptions
+** Short 
 
-Prototype in Python for desktop.
-Final application should be for Desktop and Mobile devices.
+An application which 
+- plays local music files (as any music player),
+- interleaved with pre-recorded comments from humans (simulating the comments from a radio DJ).
 
-See the wiki for more information about the project(ions).
+** Long 
+ 
+There were more than one benefit of listening to radio stations: 
+1) listening to "free" music;
+2) having this music selectioned by a knowledgable DJ, who helps to discover new artists and pieces;
+3) listening to the comments from the broadcaster, which included commercials but also other messages such as dedicaces and so on. 
+
+The first two interests of broadcasting station have mostly disapeared. Listening to "free" music is not a reason any more to listen to broadcasing station, with the generalisation of digital music and large data capacity of digital devices: everybody has his own music on his own device. Discovering new artists and arranging the tunes into armonious playlists have been taken over by applications such as spotify.
+
+The last interest of radio broadcasting stations is in the human contact, such as when the DJ (and his phoning listener) dedicate a song to some particular listener or to some category of listener. The project Radio JyBy aims at fulfilling a similar role, and extending it, on digital devices such as desktop computers, laptops and mobile devices.
+
+The hypothesis is that people will feel better about their day if they get told at regular interval, either by a fictitious DJ or by their loved ones in asynchronous mode, that they are doing great, that they are not alone, that someone is thinking about them, etcetera...
+
+* Competition and Related Applications
+
+** interleaving comments with Mp3s:
+    - Sport application "Run Zombies", Radio mode.
+** Musical Radio
+    - spotify
+** extension =telegram=
+  - Whatsapp
+  - Telegram
+  - (other application allowing audio messenging)
+** extension =pomodoro=
+  - Pomodoros applications
+  - RSI applications 
+* Prototypes
+** Alpha 0.0: Basic
+   A simple program which 
+   - receives as parameters
+     - a folder of music files  and 
+     - a folder of comment files; and
+   - plays them in interleaved order.
+** Alpha 0.1: Pomodoro
+   A simple program which 
+   - receives as parameters
+     - a folder "work" of music files for working;
+     - a folder "pause" of music files for taking a break;
+     - a folder "comments" of comment files with specific names such as
+       - announceShortPause*.*
+       - announceLongPause*.*
+       - announceWork*.*; and
+   - execute the following algorithm in a loop:
+     - play 25mns of "work" music in the order they are given
+     - Repeats three times
+       - play one random announcement file matching the regular expression "announceShortPause*.*"
+       - play 5mns of "pause" music
+       - play one random announcement file matching the regular expression "announceWork*.*"
+       - play 25mns of "work" music in the order they are given
+     - play one random announcement file matching the regular expression "announceLongPause*.*"
+     - play 20mns of "pause" music in the order they are given
+     - play one random announcement file matching the regular expression "announceWork*.*"
+
+* Planned Extensions 
+  - Sport :: TTS announcements about GPS distance or Step number achieved 
+  - Pomodoro ::
+    - music plays from one playlist for 25mns (configurable), then
+    - interrupted by commenter announcing a 5mn pause with a distinct music (commercial), and
+    - announce end of pause with return to "Work" music
+    - More details in [[file:pomodoroExtension.org][pomodoro extension]]
+  - Telegram  :: 
+    - a user can send to one of his contact some short audio comments associated with a category, such as 
+      - "Here is a song that will make you think of me" :before song:
+      - "Waw, I really like this song. Here is another one for you, I know you will like it." :between songs:
+      - "Waw, did not you like this song? Which reminds me to tell you: I love you!" :after song:
+      - "Hey, you worked so well, now it's time for a short break! Here is a song for you, just chill out for 5mns"  :short pause:
+      - "Hey, this little program tells me tat you have been working for two hours straight! Time to get out a bit! Get some sunshine on this skin of yours!" :long pause:
+      - "Hey, you lazy bastard! Time to go back to work! I love you" :after pause:
+    - The short audio comments are not played on receptions, but put on hold to play at the next occasion matching the tag, and repeated later randomly with all other audio comments matching the relevant tag.
+  - Crowd Sourcing ::
+    - Once a month the user is asked to 
+      1) record in his own voice one audio message chosen by the server (e.g. "even though I do not know you, and even though I may never meet you, laugh with you, cry with you, or kiss you. I love you. With all my heart, I love you", or "Hey, to all scientists trying to save humanity all over the world, I wanted to tell you that I believe in you, I support you, I love you!", or "Good morning, Vietnam!", or "Good night to all students before their exam period"), and to 
+      2) transcribe three audio messages from someone else (which will be compared with the original text given to the reader).
+    - In exchange, the user gets random messages played between musics (or pomodoro sessions) from people from all over the world, matching the gender, job and other keywords in his profile (e.g. :scientist:, :woman:) or matching their geographical position or the time at this geographical position.   
+
+* Business Model (Draft)
+  - Application comes for free, including
+    - a first sample of amusing radio comments
+    - some free ambient music 
+  - Business can pay to have audio announces in the free radio comments.
+  - Users can pay to
+    - acquire additional sets of radio comments (without publicity)
+    - configure which radio comments play when (depending on the time, on the location, on the mood)
+    - bid on (and later use) future features to be developped
+
+* Plateforms
+  - Desktop Computer (Linux, windows, Mac) (especially for the pomodoro extension)
+  - Mobile devices (Android, iPhhone) (especially for the Telegram extension)
+* Resources
+** Tutorials to program mp3 player
+*** Android 
+    - http://www.androidhive.info/2012/03/android-building-audio-player-tutorial/
+*** App Inventor for Android
+    - https://www.youtube.com/watch?v=pQh16rcWSOo
+
