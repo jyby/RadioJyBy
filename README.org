@@ -98,8 +98,11 @@ The hypothesis is that people will feel better about their day if they get told 
   - Mobile devices (Android, iPhhone) (especially for the Telegram extension)
 * Resources
 ** Tutorials to program mp3 player
+*** Python
+    - http://pymedia.org/tut/
 *** Android 
     - http://www.androidhive.info/2012/03/android-building-audio-player-tutorial/
 *** App Inventor for Android
     - https://www.youtube.com/watch?v=pQh16rcWSOo
+* Dependancies
 
