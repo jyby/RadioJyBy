@@ -96,13 +96,23 @@ The hypothesis is that people will feel better about their day if they get told 
 * Plateforms
   - Desktop Computer (Linux, windows, Mac) (especially for the pomodoro extension)
   - Mobile devices (Android, iPhhone) (especially for the Telegram extension)
-* Resources
-** Tutorials to program mp3 player
+* Programming Resources
+** Tutorials and Examples to program mp3 player
 *** Python
     - http://pymedia.org/tut/
+    - https://pypi.python.org/pypi/musicplayer
 *** Android 
     - http://www.androidhive.info/2012/03/android-building-audio-player-tutorial/
 *** App Inventor for Android
     - https://www.youtube.com/watch?v=pQh16rcWSOo
 * Dependancies
 
+  #+BEGIN_SRC sh
+    sudo apt-get install python-dev libsnappy-dev libtool yasm libchromaprint-dev portaudio19-dev libboost-dev
+  #+END_SRC
+
+  #+BEGIN_SRC sh
+  add-apt-repository ppa:jon-severinsson/ffmpeg
+  apt-get update
+  apt-get install libavformat-dev libswresample-dev
+  #+END_SRC
