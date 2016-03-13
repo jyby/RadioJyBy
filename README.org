@@ -62,12 +62,19 @@ The hypothesis is that people will feel better about their day if they get told 
      - play one random announcement file matching the regular expression "announceWork*.*"
 
 * Planned Extensions 
-  - Sport :: TTS announcements about GPS distance or Step number achieved 
+  - Sport :: 
+    - TTS announcements about GPS distance or Step number achieved
+    - Recorded encouragements indexed by tags such as 
+      - distance (e.g.:2k: "Hey, you have done 2k already!"
+      - time (e.g. :10mn: :1h: etc...)
+      - music change  (e.g. :betweenSongs: "waw, you are doing great, I am so proud of you!")
+	     
   - Pomodoro ::
     - music plays from one playlist for 25mns (configurable), then
     - interrupted by commenter announcing a 5mn pause with a distinct music (commercial), and
     - announce end of pause with return to "Work" music
     - More details in [[file:pomodoroExtension.org][pomodoro extension]]
+
   - Telegram  :: 
     - a user can send to one of his contact some short audio comments associated with a category, such as 
       - "Here is a song that will make you think of me" :before song:
