@@ -90,6 +90,9 @@ The hypothesis is that people will feel better about their day if they get told 
       - "Hey, this little program tells me tat you have been working for two hours straight! Time to get out a bit! Get some sunshine on this skin of yours!" :long pause:
       - "Hey, you lazy bastard! Time to go back to work! I love you" :after pause:
     - The short audio comments are not played on receptions, but put on hold to play at the next occasion matching the tag, and repeated later randomly with all other audio comments matching the relevant tag.
+    - Note: the sources of Telegram desktop
+      - could be useful to develop this extenstion and
+      - are available on github at https://github.com/telegramdesktop/tdesktop
 
   - Crowd Sourcing ::
     - Once a month the user is asked to 
