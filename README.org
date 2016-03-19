@@ -100,15 +100,52 @@ The hypothesis is that people will feel better about their day if they get told 
       2) transcribe three audio messages from someone else (which will be compared with the original text given to the reader).
     - In exchange, the user gets random messages played between musics (or pomodoro sessions) from people from all over the world, matching the gender, job and other keywords in his profile (e.g. :scientist:, :woman:) or matching their geographical position or the time at this geographical position.   
 
-* Business Model (Draft)
-  - Application comes for free, including
-    - a first sample of amusing radio comments
-    - some free ambient music 
-  - Business can pay to have audio announces in the free radio comments.
-  - Users can pay to
-    - acquire additional sets of radio comments (without publicity)
-    - configure which radio comments play when (depending on the time, on the location, on the mood)
-    - bid on (and later use) future features to be developped
+* Business Model
+** Free Application going viral
+   - Application comes for free, including
+     - a first sample of amusing radio comments
+     - some free ambient music
+     - the ability to send 5 audio messages per day and contact:
+       - if the contact has the application, those audio messages will be interleaved with their own music when playing;
+       - if the contact does not have the application, he receives the message as a mms along with an invitation to install the free application.
+   - Viral Marketing
+     - The hope is that the basic free application will go viral, as users themselves advertize the application when sending messages.
+     - A priori, no need for a centralized list of users:
+       - it should be enough (and more private) to use the mms platform to exchange the messages and have the application intercept them, and
+       - not knowing who has the application will incentivate users to "shoot" in the dark and send invitations to people.
+** Buying and Selling additional Material
+   - Users can
+     - browse and buy packages of additional audio material
+       - from voice actors under contract with the application authors via PayPal
+       - from other users (see below)
+     - browse and subscribe to "podcasts" of additional audio material
+       - from voice actors under contract with the application authors via PayPal
+       - from other users (see below)
+     - submit publically their own package or podcast of additional audio material:
+       - the submission itself requires
+	 - paying a small fee
+	 - providing some mean of identification
+	 - giving some coordinates to receive payments (e.g. paypal or bitcoin)
+       - when a sale is realized, the submitter receives a message but no payment yet until 
+	 - two months after the first purchase,
+	 - cumulating all the purchases realized during the month before the previous one:
+	 - this leaves one month to detect if some submissions violating international and internal author rights policies (in which case *all* payments are forfeit, including on submissions which were not flagged as violating such rules).
+   - the application owners receive
+     - a small fee (paying at least for the data storage) for each
+       - public individual submission
+       - creation of a podcast
+     - a small percentage of each sale or subscription (paying for the maintencion of the service).
+** Unlimited Messaging
+   - The free application provides the ability to send 5 audio messages per day and contact, partially in order to limit the usage of the application to spam.
+   - Paying a small monthly subscription fee permits to
+     - send an unlimited number of audio messages to a selection of 1,5 or 10 contacts (Depending of the level of the subscription fee). (For sending audio messages to more contacts, the user can make them public, see item [[*Buying%20and%20Selling%20additional%20Material][Buying and Selling additional Material]])
+     - give the same right to a contact from one's choice.
+ 
+** Extensions
+   - Users can bid and later pay for extensions of the application (see [[*Planned%20Extensions][Planned Extensions]])
+** Notes
+  - Traditional radios received funds by letting Businesses pay to have audio announces in the radio comments.
+  - This is somehow integrated: a voice actor can be funded by a business to make amusing comments, and sell it "for free" on the market of the app (free for the users, the advertized business paying for the salary of the voice actor and the subscription fees of the app). 
 
 * Plateforms
   - Desktop Computer (Linux, windows, Mac) (especially for the pomodoro extension)
