@@ -93,12 +93,20 @@ The hypothesis is that people will feel better about their day if they get told 
     - Note: the sources of Telegram desktop
       - could be useful to develop this extenstion and
       - are available on github at https://github.com/telegramdesktop/tdesktop
+ 
+   - Crowd Sourcing ::
+     - Once a month the user is asked to 
+       1) record in his own voice one audio message chosen by the server (e.g. "even though I do not know you, and even though I may never meet you, laugh with you, cry with you, or kiss you. I love you. With all my heart, I love you", or "Hey, to all scientists trying to save humanity all over the world, I wanted to tell you that I believe in you, I support you, I love you!", or "Good morning, Vietnam!", or "Good night to all students before their exam period"), and to 
+       2) transcribe three audio messages from someone else (which will be compared with the original text given to the reader).
+     - In exchange, the user gets random messages played between musics (or pomodoro sessions) from people from all over the world, matching the gender, job and other keywords in his profile (e.g. :scientist:, :woman:) or matching their geographical position or the time at this geographical position.   
 
-  - Crowd Sourcing ::
-    - Once a month the user is asked to 
-      1) record in his own voice one audio message chosen by the server (e.g. "even though I do not know you, and even though I may never meet you, laugh with you, cry with you, or kiss you. I love you. With all my heart, I love you", or "Hey, to all scientists trying to save humanity all over the world, I wanted to tell you that I believe in you, I support you, I love you!", or "Good morning, Vietnam!", or "Good night to all students before their exam period"), and to 
-      2) transcribe three audio messages from someone else (which will be compared with the original text given to the reader).
-    - In exchange, the user gets random messages played between musics (or pomodoro sessions) from people from all over the world, matching the gender, job and other keywords in his profile (e.g. :scientist:, :woman:) or matching their geographical position or the time at this geographical position.   
+   - Steganography :: 
+     - audio files containing the comments can contain hidden, encrypted, textual messages.
+     - the steganography extension
+       - receives access to a database of private and public encryption keys
+       - optionally associates a passphrase to each source of audio comments
+       - checks each incoming audio comments from those sources for hidden encrypted messages
+       - allow the user to hide encrypted textual messages in audio comments made public or privately sent.
 
 * Business Model
 ** Free Application going viral
