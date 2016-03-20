@@ -61,52 +61,54 @@ The hypothesis is that people will feel better about their day if they get told 
      - play 20mns of "pause" music in the order they are given
      - play one random announcement file matching the regular expression "announceWork*.*"
 
-* Planned Extensions 
-  - Sport :: 
-    - TTS announcements about GPS distance or Step number achieved
-    - Recorded encouragements indexed by tags such as 
-      - distance (e.g.:2k: "Hey, you have done 2k already!"
-      - time (e.g. :10mn: :1h: etc...)
-      - music change  (e.g. :betweenSongs: "waw, you are doing great, I am so proud of you!")
-	     
-  - Mood Diary :: 
-    - Application asks at random intervals the mood of the user
-    - Report on the diary but also
-      - compute correlations between music played and mood or
-      - choose music according to the mood (algorithm to be defined).
+* Extensions
+** Planned
+   - Pomodoro ::
+     - music plays from one playlist for 25mns (configurable), then
+     - interrupted by commenter announcing a 5mn pause with a distinct music (commercial), and
+     - announce end of pause with return to "Work" music
+     - More details in [[file:pomodoroExtension.org][pomodoro extension]]
 
-  - Pomodoro ::
-    - music plays from one playlist for 25mns (configurable), then
-    - interrupted by commenter announcing a 5mn pause with a distinct music (commercial), and
-    - announce end of pause with return to "Work" music
-    - More details in [[file:pomodoroExtension.org][pomodoro extension]]
+   - Telegram  :: 
+     - a user can send to one of his contact some short audio comments associated with a category, such as 
+       - "Here is a song that will make you think of me" :before song:
+       - "Waw, I really like this song. Here is another one for you, I know you will like it." :between songs:
+       - "Waw, did not you like this song? Which reminds me to tell you: I love you!" :after song:
+       - "Hey, you worked so well, now it's time for a short break! Here is a song for you, just chill out for 5mns"  :short pause:
+       - "Hey, this little program tells me tat you have been working for two hours straight! Time to get out a bit! Get some sunshine on this skin of yours!" :long pause:
+       - "Hey, you lazy bastard! Time to go back to work! I love you" :after pause:
+     - The short audio comments are not played on receptions, but put on hold to play at the next occasion matching the tag, and repeated later randomly with all other audio comments matching the relevant tag.
+     - Note: the sources of Telegram desktop
+       - could be useful to develop this extenstion and
+       - are available on github at https://github.com/telegramdesktop/tdesktop
+  
+** To Develop if Enough users bid on it
+   - Sport :: 
+     - TTS announcements about GPS distance or Step number achieved
+     - Recorded encouragements indexed by tags such as 
+       - distance (e.g.:2k: "Hey, you have done 2k already!"
+       - time (e.g. :10mn: :1h: etc...)
+       - music change  (e.g. :betweenSongs: "waw, you are doing great, I am so proud of you!")
+	      
+   - Mood Diary :: 
+     - Application asks at random intervals the mood of the user
+     - Report on the diary but also
+       - compute correlations between music played and mood or
+       - choose music according to the mood (algorithm to be defined).
 
-  - Telegram  :: 
-    - a user can send to one of his contact some short audio comments associated with a category, such as 
-      - "Here is a song that will make you think of me" :before song:
-      - "Waw, I really like this song. Here is another one for you, I know you will like it." :between songs:
-      - "Waw, did not you like this song? Which reminds me to tell you: I love you!" :after song:
-      - "Hey, you worked so well, now it's time for a short break! Here is a song for you, just chill out for 5mns"  :short pause:
-      - "Hey, this little program tells me tat you have been working for two hours straight! Time to get out a bit! Get some sunshine on this skin of yours!" :long pause:
-      - "Hey, you lazy bastard! Time to go back to work! I love you" :after pause:
-    - The short audio comments are not played on receptions, but put on hold to play at the next occasion matching the tag, and repeated later randomly with all other audio comments matching the relevant tag.
-    - Note: the sources of Telegram desktop
-      - could be useful to develop this extenstion and
-      - are available on github at https://github.com/telegramdesktop/tdesktop
- 
-   - Crowd Sourcing ::
-     - Once a month the user is asked to 
-       1) record in his own voice one audio message chosen by the server (e.g. "even though I do not know you, and even though I may never meet you, laugh with you, cry with you, or kiss you. I love you. With all my heart, I love you", or "Hey, to all scientists trying to save humanity all over the world, I wanted to tell you that I believe in you, I support you, I love you!", or "Good morning, Vietnam!", or "Good night to all students before their exam period"), and to 
-       2) transcribe three audio messages from someone else (which will be compared with the original text given to the reader).
-     - In exchange, the user gets random messages played between musics (or pomodoro sessions) from people from all over the world, matching the gender, job and other keywords in his profile (e.g. :scientist:, :woman:) or matching their geographical position or the time at this geographical position.   
+    - Crowd Sourcing ::
+      - Once a month the user is asked to 
+       	1) record in his own voice one audio message chosen by the server (e.g. "even though I do not know you, and even though I may never meet you, laugh with you, cry with you, or kiss you. I love you. With all my heart, I love you", or "Hey, to all scientists trying to save humanity all over the world, I wanted to tell you that I believe in you, I support you, I love you!", or "Good morning, Vietnam!", or "Good night to all students before their exam period"), and to 
+       	2) transcribe three audio messages from someone else (which will be compared with the original text given to the reader).
+      - In exchange, the user gets random messages played between musics (or pomodoro sessions) from people from all over the world, matching the gender, job and other keywords in his profile (e.g. :scientist:, :woman:) or matching their geographical position or the time at this geographical position.   
 
-   - Steganography :: 
-     - audio files containing the comments can contain hidden, encrypted, textual messages.
-     - the steganography extension
-       - receives access to a database of private and public encryption keys
-       - optionally associates a passphrase to each source of audio comments
-       - checks each incoming audio comments from those sources for hidden encrypted messages
-       - allow the user to hide encrypted textual messages in audio comments made public or privately sent.
+    - Steganography :: 
+      - audio files containing the comments can contain hidden, encrypted, textual messages.
+      - the steganography extension
+       	- receives access to a database of private and public encryption keys
+       	- optionally associates a passphrase to each source of audio comments
+       	- checks each incoming audio comments from those sources for hidden encrypted messages
+       	- allow the user to hide encrypted textual messages in audio comments made public or privately sent.
 
 * Business Model
 ** Free Application going viral
