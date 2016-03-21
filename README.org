@@ -26,9 +26,8 @@ The last interest of radio broadcasting stations is in the human contact, such a
 
 The hypothesis is that people will feel better about their day if they get told at regular interval, either by a fictitious DJ or by their loved ones in asynchronous mode, that they are doing great, that they are not alone, that someone is thinking about them, etcetera...
 
-* Competition and Related Applications
-
-** interleaving comments with Mp3s:
+* Related Applications
+** Interleaving comments with Mp3s:
     - Sport application "Run Zombies", Radio mode.
 ** Musical Radio
     - spotify
@@ -39,7 +38,7 @@ The hypothesis is that people will feel better about their day if they get told 
 ** extension =pomodoro=
   - Pomodoros applications
   - RSI applications 
-* Prototypes
+* Development Steps
 ** Alpha 0.0: Basic
    A simple program which 
    - receives as parameters
@@ -55,7 +54,7 @@ The hypothesis is that people will feel better about their day if they get told 
        - announceShortPause*.*
        - announceLongPause*.*
        - announceWork*.*; and
-   - execute the following algorithm in a loop:
+   - executes the following algorithm in a loop:
      - play 25mns of "work" music in the order they are given
      - Repeats three times
        - play one random announcement file matching the regular expression "announceShortPause*.*"
@@ -65,6 +64,24 @@ The hypothesis is that people will feel better about their day if they get told 
      - play one random announcement file matching the regular expression "announceLongPause*.*"
      - play 20mns of "pause" music in the order they are given
      - play one random announcement file matching the regular expression "announceWork*.*"
+** Alpha 0.2: Parameter file
+   - A simple program doing everything above, but
+     - reading a configuration file to read the parameters 
+       - name of a folder "work" of music files for working;
+       - name of a folder "pause" of music files for taking a break;
+       - name of a folder "comments" of comment files;
+       - time of work period
+       - time of short pause period
+       - time of long pause period
+       - number of work periods before a long pause period
+** Alpha 0.3: Minimalist Graphical interface
+     - an interface to see and change the parameters
+     - code to write the parameters back in the configuration file
+** Alpha 0.4: Screen blocking
+   - graphical interface to warn when the end of the pause period is close
+   - code to block the screen during pauses
+   - graphical interface to offer to postpone or skip the pause
+   - graphical interface to start a short or long pause
 
 * Extensions
 ** Planned
@@ -87,7 +104,7 @@ The hypothesis is that people will feel better about their day if they get told 
        - could be useful to develop this extenstion and
        - are available on github at https://github.com/telegramdesktop/tdesktop
   
-** To Develop if Enough users bid on it
+** Conditional to funding
    - Sport :: 
      - TTS announcements about GPS distance or Step number achieved
      - Recorded encouragements indexed by tags such as 
