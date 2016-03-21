@@ -2,12 +2,17 @@
 #+AUTHOR: Jeremy "Le JyBy"
 
 * Descriptions
+
+** Tag Line
+   
+   Putting back the human connection in the act of listening to music.
+
 ** Short 
 
 An application which 
 - plays local music files (as any music player),
 - interleaved with pre-recorded comments from humans (simulating the comments from a radio DJ).
-
+   
 ** Long 
  
 There were more than one benefit of listening to radio stations: 
