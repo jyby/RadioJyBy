@@ -124,6 +124,11 @@ The hypothesis is that people will feel better about their day if they get told 
        2) transcribe three audio messages from someone else (which will be compared with the original text given to the reader).
      - In exchange, the user gets random messages played between musics (or pomodoro sessions) from people from all over the world, matching the gender, job and other keywords in his profile (e.g. :scientist:, :woman:) or matching their geographical position or the time at this geographical position.   
 
+   - Identification independent of phone number :: 
+     - Base User Authentification on pair of RSA keys
+     - Allow people to send each other their pairs by any SHARE method,
+     - including bluetooth at a party or email at distance.
+
    - Point to Point Encryption ::
      - Audio Messages are encrypted from point to point.
 
