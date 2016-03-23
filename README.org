@@ -117,7 +117,7 @@ The hypothesis is that people will feel better about their day if they get told 
    - Sport :: 
      - TTS announcements about GPS distance or Step number achieved
      - Recorded encouragements indexed by tags such as 
-       - distance (e.g.:2k: "Hey, you have done 2k already!"
+       - distance (e.g. :2k: "Hey, you have done 2k already!"
        - time (e.g. :10mns: :1h: etc...)
        - music change  (e.g. :betweenSongs: "waw, you are doing great, I am so proud of you!")
 	      
@@ -201,8 +201,8 @@ The hypothesis is that people will feel better about their day if they get told 
   - Traditional radios received funds by letting Businesses pay to have audio announces in the radio comments.
   - This is somehow integrated: a voice actor can be funded by a business to make amusing comments, and sell it "for free" on the market of the app (free for the users, the advertised business paying for the salary of the voice actor and the subscription fees of the app). 
 * Platforms
-  - Desktop Computer (Linux, windows, Mac) (especially for the Pomodoro extension)
-  - Mobile devices (Android, iPhone) (especially for the Telegram extension)
+  - Desktop Computer (Linux first, windows and Mac later) (especially for the Pomodoro extension)
+  - Mobile devices (Android first, iPhone later) (especially for the Telegram extension)
 * Programming Resources
 ** Tutorials and Examples to program mp3 player
 *** Python
@@ -223,6 +223,31 @@ The hypothesis is that people will feel better about their day if they get told 
   apt-get update
   apt-get install libavformat-dev libswresample-dev
   #+END_SRC
+
+* LIST of potential hash tags and texts for Audio Comments
+  + before song
+    - "Here is a song that will make you think of me"
+  + between songs
+    - "Waw, I really like this song. Here is another one for you, I know you will like it."
+  + after song
+    - "Waw, did not you like this song? Which reminds me to tell you: I love you!"
+  + short pause
+    - "Hey, you worked so well, now it's time for a short break! Here is a song for you, just chill out for 5mns"
+  + :long pause:
+    - "Hey, this little program tells me tat you have been working for two hours straight! Time to get out a bit! Get some sunshine on this skin of yours!"
+  + :after pause:
+    - "Hey, you lazy bastard! Time to go back to work! I love you"
+** Personalized
+   + :scientist:
+     - "I dedicate the following song to all the scientists working at saving the world who listen to this"
+   + :woman:
+** Sport
+  + between songs
+    - "waw, you are doing great, I am so proud of you!"
+  + :2k:
+    - "Hey, you have done 2k already!"
+  + :10mns:
+  + :1h:
 
 * General Notes
   - Separate the layer of communication from the main part, into a library.
