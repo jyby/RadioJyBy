@@ -82,6 +82,15 @@ The hypothesis is that people will feel better about their day if they get told 
    - code to block the screen during pauses
    - graphical interface to offer to postpone or skip the pause
    - graphical interface to start a short or long pause
+** Alpha 0.5: Recording Comments
+   - code to record audio comments and associate them to a set of hash tags.  
+   - Graphical interfaces to
+     - browse, add and remove audio recordings; and to
+     - edit the hash tags associated to heach audio comment
+** Alpha 0.6: Exchanging Comments by file
+   - Code to export a set of pairs of audio comments with hashtags in a single compressed file 
+   - Code to import a set of pairs of audio comments with hash tags from a single compressed file
+   - Graphical interface for both
 
 * Extensions
 ** Planned
