@@ -5,7 +5,7 @@
 
 ** Tag Line
    
-   Putting back the human connection in the act of listening to music.
+   Putting back the human touch in the act of listening to music.
 
 ** Short 
 
@@ -17,10 +17,10 @@ An application which
  
 There were more than one benefit of listening to radio stations: 
 1) listening to "free" music;
-2) having this music selectioned by a knowledgable DJ, who helps to discover new artists and pieces;
-3) listening to the comments from the broadcaster, which included commercials but also other messages such as dedicaces and so on. 
+2) having this music selectioned by a knowledgeable DJ, who helps to discover new artists and pieces;
+3) listening to the comments from the broadcaster, which included commercials but also other messages such as news, personal messages  and so on. 
 
-The first two interests of broadcasting station have mostly disapeared. Listening to "free" music is not a reason any more to listen to broadcasing station, with the generalisation of digital music and large data capacity of digital devices: everybody has his own music on his own device. Discovering new artists and arranging the tunes into armonious playlists have been taken over by applications such as spotify.
+The first two interests of broadcasting station have mostly disappeared. Listening to "free" music is not a reason any more to listen to broadcasting station, with the generalization of digital music and large data capacity of digital devices: everybody has his own music on his own device. Discovering new artists and arranging the tunes into harmonious play-lists have been taken over by applications such as /Spotify/.
 
 The last interest of radio broadcasting stations is in the human contact, such as when the DJ (and his phoning listener) dedicate a song to some particular listener or to some category of listener. The project Radio JyBy aims at fulfilling a similar role, and extending it, on digital devices such as desktop computers, laptops and mobile devices.
 
@@ -30,13 +30,13 @@ The hypothesis is that people will feel better about their day if they get told 
 ** Interleaving comments with Mp3s:
     - Sport application "Run Zombies", Radio mode.
 ** Musical Radio
-    - spotify
+    - Spotify
 ** extension =telegram=
-  - Whatsapp
+  - Whats-app
   - Telegram
-  - (other application allowing audio messenging)
-** extension =pomodoro=
-  - Pomodoros applications
+  - (other application allowing audio messaging)
+** extension =Pomodoro=
+  - Pomodoro applications
   - RSI applications 
 * Development Steps
 ** Alpha 0.0: Basic
@@ -86,10 +86,10 @@ The hypothesis is that people will feel better about their day if they get told 
 * Extensions
 ** Planned
    - Pomodoro ::
-     - music plays from one playlist for 25mns (configurable), then
-     - interrupted by commenter announcing a 5mn pause with a distinct music (commercial), and
+     - music plays from one play-list for 25mns (configurable), then
+     - interrupted by comment announcing a 5mns pause with a distinct music (commercial), and
      - announce end of pause with return to "Work" music
-     - More details in [[file:pomodoroExtension.org][pomodoro extension]]
+     - More details in [[file:pomodoroExtension.org][Pomodoro extension]]
 
    - Telegram  :: 
      - a user can send to one of his contact some short audio comments associated with a category, such as 
@@ -101,15 +101,15 @@ The hypothesis is that people will feel better about their day if they get told 
        - "Hey, you lazy bastard! Time to go back to work! I love you" :after pause:
      - The short audio comments are not played on receptions, but put on hold to play at the next occasion matching the tag, and repeated later randomly with all other audio comments matching the relevant tag.
      - Note: the sources of Telegram desktop
-       - could be useful to develop this extenstion and
-       - are available on github at https://github.com/telegramdesktop/tdesktop
+       - could be useful to develop this extension and
+       - are available on GitHub at https://github.com/telegramdesktop/tdesktop
   
 ** Conditional to funding
    - Sport :: 
      - TTS announcements about GPS distance or Step number achieved
      - Recorded encouragements indexed by tags such as 
        - distance (e.g.:2k: "Hey, you have done 2k already!"
-       - time (e.g. :10mn: :1h: etc...)
+       - time (e.g. :10mns: :1h: etc...)
        - music change  (e.g. :betweenSongs: "waw, you are doing great, I am so proud of you!")
 	      
    - Mood Diary :: 
@@ -122,25 +122,26 @@ The hypothesis is that people will feel better about their day if they get told 
      - Once a month the user is asked to 
        1) record in his own voice one audio message chosen by the server (e.g. "even though I do not know you, and even though I may never meet you, laugh with you, cry with you, or kiss you. I love you. With all my heart, I love you", or "Hey, to all scientists trying to save humanity all over the world, I wanted to tell you that I believe in you, I support you, I love you!", or "Good morning, Vietnam!", or "Good night to all students before their exam period"), and to 
        2) transcribe three audio messages from someone else (which will be compared with the original text given to the reader).
-     - In exchange, the user gets random messages played between musics (or pomodoro sessions) from people from all over the world, matching the gender, job and other keywords in his profile (e.g. :scientist:, :woman:) or matching their geographical position or the time at this geographical position.   
+     - In exchange, the user gets random messages played between musics (or Pomodoro sessions) from people from all over the world, matching the gender, job and other keywords in his profile (e.g. :scientist:, :woman:) or matching their geographical position or the time at this geographical position.   
 
    - Identification independent of phone number :: 
-     - Base User Authentification on pair of RSA keys
+     - Base User Authentication on pair of RSA keys
      - Allow people to send each other their pairs by any SHARE method,
-     - including bluetooth at a party or email at distance.
+     - including Bluetooth at a party or email at distance.
 
    - Point to Point Encryption ::
      - Audio Messages are encrypted from point to point.
+     - And deniable.
 
    - Decentralized Mode ::
-     - Rather than keeping the message on a central sever (e.g. Whatsapp, Telegram), transmit the audio message only if the correspondent is connected (e.g. Skype mode)
+     - Rather than keeping the message on a central sever (e.g. Whats-app, Telegram), transmit the audio message only if the correspondent is connected (e.g. Skype mode)
      - Note that a server is still needed in order to gather the information about connection (and hence can store meta data information)
 
    - Steganography :: 
      - audio files containing the comments can contain hidden, encrypted, textual messages.
      - the steganography extension
        - receives access to a database of private and public encryption keys
-       - optionally associates a passphrase to each source of audio comments
+       - optionally associates a pass-phrase to each source of audio comments
        - checks each incoming audio comments from those sources for hidden encrypted messages
        - allow the user to hide encrypted textual messages in audio comments made public or privately sent.
 
@@ -151,12 +152,12 @@ The hypothesis is that people will feel better about their day if they get told 
      - some free ambient music
      - the ability to send 5 audio messages per day and contact:
        - if the contact has the application, those audio messages will be interleaved with their own music when playing;
-       - if the contact does not have the application, he receives the message as a mms along with an invitation to install the free application.
+       - if the contact does not have the application, he receives the message as a MMS along with an invitation to install the free application.
    - Viral Marketing
-     - The hope is that the basic free application will go viral, as users themselves advertize the application when sending messages.
+     - The hope is that the basic free application will go viral, as users themselves advertise the application when sending messages.
      - A priori, no need for a centralized list of users:
-       - it should be enough (and more private) to use the mms platform to exchange the messages and have the application intercept them, and
-       - not knowing who has the application will incentivate users to "shoot" in the dark and send invitations to people.
+       - it should be enough (and more private) to use the MMS platform to exchange the messages and have the application intercept them, and
+       - not knowing who has the application will give incentives for  users to "shoot" in the dark and send invitations to people.
 ** Buying and Selling additional Material
    - Users can
      - browse and buy packages of additional audio material
@@ -165,11 +166,11 @@ The hypothesis is that people will feel better about their day if they get told 
      - browse and subscribe to "podcasts" of additional audio material
        - from voice actors under contract with the application authors via PayPal
        - from other users (see below)
-     - submit publically their own package or podcast of additional audio material:
+     - submit publicly their own package or podcast of additional audio material:
        - the submission itself requires
 	 - paying a small fee
 	 - providing some mean of identification
-	 - giving some coordinates to receive payments (e.g. paypal or bitcoin)
+	 - giving some coordinates to receive payments (e.g. PayPal or bit-coin)
        - when a sale is realized, the submitter receives a message but no payment yet until 
 	 - two months after the first purchase,
 	 - cumulating all the purchases realized during the month before the previous one:
@@ -178,7 +179,7 @@ The hypothesis is that people will feel better about their day if they get told 
      - a small fee (paying at least for the data storage) for each
        - public individual submission
        - creation of a podcast
-     - a small percentage of each sale or subscription (paying for the maintencion of the service).
+     - a small percentage of each sale or subscription (paying for the maintenance of the service).
 ** Unlimited Messaging
    - The free application provides the ability to send 5 audio messages per day and contact, partially in order to limit the usage of the application to spam.
    - Paying a small monthly subscription fee permits to
@@ -189,11 +190,10 @@ The hypothesis is that people will feel better about their day if they get told 
    - Users can bid and later pay for extensions of the application (see [[*Planned%20Extensions][Planned Extensions]])
 ** Notes
   - Traditional radios received funds by letting Businesses pay to have audio announces in the radio comments.
-  - This is somehow integrated: a voice actor can be funded by a business to make amusing comments, and sell it "for free" on the market of the app (free for the users, the advertized business paying for the salary of the voice actor and the subscription fees of the app). 
-
-* Plateforms
-  - Desktop Computer (Linux, windows, Mac) (especially for the pomodoro extension)
-  - Mobile devices (Android, iPhhone) (especially for the Telegram extension)
+  - This is somehow integrated: a voice actor can be funded by a business to make amusing comments, and sell it "for free" on the market of the app (free for the users, the advertised business paying for the salary of the voice actor and the subscription fees of the app). 
+* Platforms
+  - Desktop Computer (Linux, windows, Mac) (especially for the Pomodoro extension)
+  - Mobile devices (Android, iPhone) (especially for the Telegram extension)
 * Programming Resources
 ** Tutorials and Examples to program mp3 player
 *** Python
@@ -203,7 +203,7 @@ The hypothesis is that people will feel better about their day if they get told 
     - http://www.androidhive.info/2012/03/android-building-audio-player-tutorial/
 *** App Inventor for Android
     - https://www.youtube.com/watch?v=pQh16rcWSOo
-* Dependancies
+* Dependencies
 
   #+BEGIN_SRC sh
     sudo apt-get install python-dev libsnappy-dev libtool yasm libchromaprint-dev portaudio19-dev libboost-dev
@@ -214,3 +214,6 @@ The hypothesis is that people will feel better about their day if they get told 
   apt-get update
   apt-get install libavformat-dev libswresample-dev
   #+END_SRC
+
+* General Notes
+  - Separate the layer of communication from the main part, into a library.
