@@ -154,6 +154,13 @@ The hypothesis is that people will feel better about their day if they get told 
        - checks each incoming audio comments from those sources for hidden encrypted messages
        - allow the user to hide encrypted textual messages in audio comments made public or privately sent.
 
+   - Get Things Done :: 
+     - Add music and comment categories corresponding to the various phases described by David Allen in his methodology "Get Things Done", along with
+     - options to scheduled when those are launched (e.g. Classical music when doing the weekly review)
+
+   - Strict Pomodoro :: 
+     - Add Music and comment categories corresponding to a strict implementation of the Pomodoro methodology.
+
 * Business Model
 ** Free Application going viral
    - Application comes for free, including
