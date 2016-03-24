@@ -120,6 +120,8 @@ The hypothesis is that people will feel better about their day if they get told 
        - distance (e.g. :2k: "Hey, you have done 2k already!"
        - time (e.g. :10mns: :1h: etc...)
        - music change  (e.g. :betweenSongs: "waw, you are doing great, I am so proud of you!")
+     - GPS Triggered audio messages
+       - user is required to run 1 unit of distance or of time before being allowed to hear the next message.
 	      
    - Mood Diary :: 
      - Application asks at random intervals the mood of the user
