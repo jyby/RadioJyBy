@@ -114,6 +114,10 @@ The hypothesis is that people will feel better about their day if they get told 
        - are available on GitHub at https://github.com/telegramdesktop/tdesktop
   
 ** Conditional to funding
+   - Videos :: 
+     - Add support for playing, instead of music, 
+       - video files
+       - links to youtube videos
    - Sport :: 
      - TTS announcements about GPS distance or Step number achieved
      - Recorded encouragements indexed by tags such as 
