@@ -98,6 +98,7 @@ The hypothesis is that people will feel better about their day if they get told 
      - interrupted by comment announcing a 5mns pause with a distinct music (commercial), and
      - announce end of pause with return to "Work" music
      - More details in [[file:pomodoroExtension.org][Pomodoro extension]]
+     - Note: if the "work" playlist is empty, then just silence is played while working, interrupted by messages and music for the breaks.
 
    - Telegram  :: 
      - a user can send to one of his contact some short audio comments associated with a category, such as 
@@ -165,14 +166,9 @@ The hypothesis is that people will feel better about their day if they get told 
 
    - Strict Pomodoro :: 
      - Add Music and comment categories corresponding to a strict implementation of the Pomodoro methodology.
-** Videos
-   - Extend it so that to play videos in addition to music and recordings
-   - applications
-     - play some music videos or relaxing videos during the breaks;
-     - plays some video messages from friends and family instead of just an audio recording.
-** Exportation of mixes
-   - Give as an option the exportation of a static mix of music and comments.
-   - This will permit to upload it to a simpler mp3 player.
+   - Exportation of mixes
+    - Give as an option the exportation of a static mix of music and comments.
+    - This will permit to upload it to a simpler mp3 player.
 * Business Model
 ** Free Application going viral
    - Application comes for free, including
