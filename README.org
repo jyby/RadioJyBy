@@ -2,7 +2,6 @@
 #+AUTHOR: Jeremy "Le JyBy"
 
 * Descriptions
-
 ** Tag Line
    
    Putting back the human touch in the act of listening to music.
@@ -166,7 +165,9 @@ The hypothesis is that people will feel better about their day if they get told 
 
    - Strict Pomodoro :: 
      - Add Music and comment categories corresponding to a strict implementation of the Pomodoro methodology.
-
+** Exportation of mixes
+   - Give as an option the exportation of a static mix of music and comments.
+   - This will permit to upload it to a simpler mp3 player.
 * Business Model
 ** Free Application going viral
    - Application comes for free, including
