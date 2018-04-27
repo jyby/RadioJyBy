@@ -1,0 +1,462 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[12pt,letterpaper]{report}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage[spanish]{babel}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={Radio JyBy},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+\usepackage{biblatex}
+\addbibresource{referencias.bib}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhf{}
+\lhead{\rightmark}
+\rhead{Página \textbf{\thepage}}
+\cfoot{Universidad de Chile - Facultad de Ciencias Físicas y Matemáticas\\Departamento de Ciencias de la Computación}
+
+\frenchspacing
+\title{\Huge Incorporación de gamification y mensajes personales a la
+  técnica pomodoro \\ \Large Introducción al Trabajo de Título \\ \Large Propuesta de tema}
+\author{Nicolás Salas V.\\\texttt{nikosalas@gmail.com}\\\texttt{17.478.091-9}\\Tel.: \texttt{(2) 22490790} - \texttt{+56 9 8252 6659}}
+\def\thesection       {\arabic{section}}
+
+\begin{document}
+
+\begin{figure}[t]
+\includegraphics[scale=0.83]{logo.png}
+%\hspace{3.5cm}
+\begin{tabular}{l}
+\small Universidad de Chile\\
+\small Facultad de Ciencias Físicas y Matemáticas\\
+\small Departamento de Ciencias de la Computación\\
+\small CC6908 Introducción al Trabajo de Título\\
+\small Prof: Jérémy Barbay
+\vspace{2.3cm}
+\end{tabular}
+\end{figure}
+\maketitle
+
+\tableofcontents
+\newpage
+
+\hypertarget{motivaciuxf3n}{%
+\section{Motivación}\label{motivaciuxf3n}}
+
+En este trabajo se busca comprobar la efectividad de incorporar música,
+mensajes de audio personalizados y la técnica de \emph{gamification}
+sobre la técnica de manejo de tiempo \emph{pomodoro}. Para explicar la
+motivación de este trabajo, primero se introducen los conceptos
+anteriormente mencionados y luego se plantea un conjunto de hipótesis
+sobre el comportamiento de los usuarios.
+
+\textbf{Pomodoro}\cite{cirillo2009pomodoro} es una técnica de manejo de tiempo diseñada para
+aumentar la productividad del trabajo de las personas. Se trata de
+dividir el trabajo en períodos de alrededor de 25 minutos para luego
+tomar una pausa corta que típicamente dura 5 minutos. A esta ventana de
+tiempo (30 minutos) se le asigna una \emph{unidad} llamada Pomodoro.
+Luego de cumplir cuatro pomodoros, la persona puede tomar un descanso
+más largo de 25 ó 30 minutos. Finalmente, después de ese largo descanso,
+se repite el ciclo.
+
+La *gamification*\footnote{En Español esto se diría "ludificación". En
+  este trabajo simplemente se dirá "gamification".}\cite{deterding2011gamification} es la aplicación de
+elementos propios de los juegos a contextos fuera de éstos. Tiene muchas
+aplicaciones\footnote{Marketing, trabajo, educación, salud, entre
+  varias otras más.}. La literatura al respecto
+sugiere que en la mayoría de los casos aplicar la \emph{gamification} a
+ciertos procesos ayuda, entre otros, a la productividad y motivación de
+la persona, aunque esto \textbf{no es necesariamente
+cierto}\cite{hamari2014gamification}.
+
+Los \textbf{mensajes dirigidos} explícitamente a una persona hoy son una
+realidad gracias a aplicaciones como WhatsApp o Telegram. Gracias a
+estas aplicaciones, los mensajes de seres queridos están al alcance del
+bolsillo. Si al proceso de escuchar música se le incorporara estos
+elementos, se podría fabricar un producto parecido a una radio, en que
+se intercalan mensajes dirigidos con música.
+
+Ya que se sabe que el aumento de productividad y motivación de las
+personas no es seguro aplicando la gamification, este trabajo busca
+responder si es que la aplicacion de elementos propios del juego a la
+técnica pomodoro produce mejoras en la productividad y enseña la
+correcta aplicación de la técnica.
+
+También, se busca comprobar si la reproducción de mensajes de sus seres
+queridos en los dispositivos de sus usuarios puede aumentar la
+productividad de igual forma o no. Todo esto en un contexto de audio y
+la aplicación de la técnica pomodoro.
+
+La hipótesis de este trabajo es que mezclando la gamification, la música
+y mensajes dirigidos, los usuarios mejorarán la aplicación de la técnica
+pomodoro y como consecuencia también aumentarán su productividad.
+
+\newpage
+\hypertarget{posibles-soluciones}{%
+\section{Posibles soluciones}\label{posibles-soluciones}}
+
+Este trabajo posee tres componentes que lo definen:
+
+\begin{itemize}
+\tightlist
+\item
+  Escuchar música
+\item
+  Reproducción de mensajes de voz personalizados
+\item
+  Elementos propios de los juegos
+\end{itemize}
+
+Hay múltiples soluciones en cada caso: para servicios que entregan
+música está Spotify, entre otros. No vale la pena mencionar más. También
+hay reproductores que toman música local como \emph{VLC},
+\emph{Clementine}, \emph{Amarok}, etc. La lista es larga.
+
+El intercambio de mensajes también es un problema resuelto. Desde el
+antiguo \emph{MSN Plus} hasta los actuales \emph{WhatsApp},
+\emph{Telegram} y \emph{LINE}, por nombrar algunos.
+
+Las aplicaciones o plataformas que incorporan elementos del juego para
+realizar tareas hoy no son nada nuevo. Dependiendo del contexto, existen
+varias soluciones al problema de /gamificar/\footnote{En español esto
+  sería /ludificar/, pero por consistencia se deja el término en inglés}
+tareas. Por ejemplo existe \emph{Habitica} para propósitos generales o
+\emph{Zombies, Run!} para deportistas.
+
+Aún así, no hay ningún producto que unifique todas estas cosas:
+
+\begin{itemize}
+\tightlist
+\item
+  Permita escuchar música
+\item
+  Implemente la técnica pomodoro con elementos del juego
+\item
+  Alterne mensajes de voz enviados por contactos.
+\end{itemize}
+
+Una solución evidente a esto es simplemente integrar aplicaciones que
+resuelvan estos temas por separado. Escuchar algunos mensajes de aliento
+desde WhatsApp, usar Tomato Timer para Pomodoro, VLC o Spotify para
+escuchar música y Habitica para incorporar los elementos del juego. Si
+bien en papel esto resuleve el problema planteado, es impracticable para
+el estudio que se requiere. En realizar tareas que se podrían hacer con
+uno o dos clic o secuencias de teclado, se perdería tiempo en los
+cambios de contexto entre aplicaciones, generando finalmente una pérdida
+de productividad, que es lo que últimamente se busca mejorar.
+
+\newpage
+\hypertarget{objetivos-del-proyecto}{%
+\section{Objetivos del proyecto}\label{objetivos-del-proyecto}}
+
+Este trabajo tiene un objetivo general y un desglose de varios objetivos
+específicos que ayudan a cumplir ese objetivo general.
+
+\hypertarget{objetivo-general}{%
+\subsection{Objetivo general}\label{objetivo-general}}
+
+Proveer un servicio de música que incorpore mensajes personalizados y
+elementos del juego (gamification) a la técnica pomodoro con el objetivo
+de aumentar la productividad de su usuario.
+
+\hypertarget{objetivos-especuxedficos}{%
+\subsection{Objetivos específicos}\label{objetivos-especuxedficos}}
+
+\hypertarget{obtener-un-reproductor-de-muxfasica-extensible}{%
+\subsubsection{Obtener un reproductor de música
+extensible}\label{obtener-un-reproductor-de-muxfasica-extensible}}
+
+Teniendo en cuenta que toda esta aplicación gira en torno al audio, un
+reproductor de audio aparece como el componente central del proyecto.
+Por la inherente extensibilidad de uso de la aplicación es imperioso que
+la arquitectura que presente este reproductor permita un desarrollo de
+extensiones fácilmente. Si bien tomar una aplicación de reproducción ya
+existente parece el camino más fácil, el comprender e indagar en el
+código puede tomar parte importante del tiempo del proyecto.
+
+\hypertarget{implementaciuxf3n-de-un-reproductor-de-muxfasica-que-incorpore-mensajes-dirigidos}{%
+\subsubsection{Implementación de un reproductor de música que incorpore
+mensajes
+dirigidos}\label{implementaciuxf3n-de-un-reproductor-de-muxfasica-que-incorpore-mensajes-dirigidos}}
+
+Este proyecto contempla la implementación un reproductor de música que
+incluye interfaz de usuario gráfica, es capaz de intercalar mensajes
+dirigidos a su usuario según elementos de gamification a definir y
+muestra notificaciones relevantes de Pomodoro. A continuación se
+presenta de manera muy resumida los hitos tentativos de desarrollo del
+proyecto y se describen los hitos en términos de funcionalidades que
+debe cumplir.
+
+\begin{enumerate}
+\tightlist
+\item
+  Reproductor minimal: Puede reproducir música y archivos de voz
+  dirigidos al usuario de forma intercalada. Sin interfaz de usuario.
+\item
+  Pomodoro: Puede diferenciar entre música para concentrarse y música
+  para descansar, anuncia pausas cortas y largas.
+\item
+  Ajuste de parámetros: Es capaz de leer parámetros desde un archivo de
+  configuración. Todavía no hay interfaz de usuario.
+\item
+  Interfaz de usuario minimal: Se puede cambiar opciones por medio de
+  una interfaz gráfica minimal. Los cambios son reflejados en el archivo
+  de configuración.
+\item
+  Bloqueo de estación de trabajo: La interfaz de usuario (en adelante
+  UI) avisa sobre hitos importantes como pausas cortas y largas, fin de
+  descanso. También puede bloquear la pantalla bajo autorización del
+  usuario.
+\item
+  Modificación del flujo: Permite las opciones de saltarse o postergar
+  pausas por el usuario. Por supuesto esto no bloquea la estación de
+  trabajo.
+\item
+  Generación de estadísticas: El programa detecta los pomodoros
+  cumplidos en un día y sus fracciones, la cantidad de pausas saltadas,
+  la cantidad de tiempo de trabajo que debió ser descanso y atrasos en
+  las pausas. Estos datos se guardan en un archivo para conocimiento del
+  usuario y para medir resultados.
+\item
+  Grabado de comentarios: Los usuarios pueden intercambiar comentarios
+  grabados por ellos mismos según categorías (pausas largas, cortas y
+  fines de descanso). La aplicación tiene opción de agregar, cambiar o
+  eliminar archivos y ofrece la posibilidad de cambiar de categoría las
+  grabaciones.
+\item
+  Incorporación de gamification: La aplicación provee elementos del
+  juego que mantienen al usuario motivado. Qué elementos se incorporan
+  es una tarea que este documento en particular no resuelve.
+\item
+  Implementación en plataformas de escritorio: La aplicación cuenta con
+  una UI funcional en macOS, Linux y Windows.
+\end{enumerate}
+
+\hypertarget{medir-resultados-de-productividad}{%
+\subsubsection{Medir resultados de
+productividad}\label{medir-resultados-de-productividad}}
+
+Finalmente se revisa que tanto aumenta la conveniencia o productividad
+el uso del reproductor musical desarrollado. Usando los archivos
+proporcionados por la aplicación se mide la evolución de la técnica
+pomodoro y si ésta se ajusta a lo que el mismo usuario se propuso. Con
+estos datos se tiene una evaluación objetiva de la productividad del
+usuario. Para medir subjetivamente, se incorporará la opinión de cada
+usuario.
+
+\hypertarget{proveer-una-aplicaciuxf3n-fuxe1cil-de-extender}{%
+\subsubsection{Proveer una aplicación fácil de
+extender}\label{proveer-una-aplicaciuxf3n-fuxe1cil-de-extender}}
+
+La planificación de este proyecto contempla sólo una extensión de varias
+posibles. Al final del proyecto es objetivo especificar posibles
+adiciones futuras a la aplicación.
+
+\newpage
+\hypertarget{idea-general-de-la-soluciuxf3n}{%
+\section{Idea general de la
+solución}\label{idea-general-de-la-soluciuxf3n}}
+
+Para describir una idea general de solución, se hace un desglose de
+soluciones de un problema por subsección.
+
+\hypertarget{quuxe9-es-el-proyecto}{%
+\subsection{Qué es el proyecto}\label{quuxe9-es-el-proyecto}}
+
+Por obvio que parezca, no está de más explicitar que este proyecto debe
+ser una aplicación de escritorio o móvil que realice las tareas
+descritas en la sección de objetivos del proyecto. Con ello se hará
+fácilmente computable los resultados para posterior evaluación.
+
+\hypertarget{usar-cuxf3digo-existente-o-empezar-de-cero}{%
+\subsection{Usar código existente o empezar de
+cero}\label{usar-cuxf3digo-existente-o-empezar-de-cero}}
+
+El discernir entre usar un reproductor hecho y consolidado versus
+desarrollar un reproductor desde cero también representa un problema.
+Usar un reproductor ya hecho introduce el problema de la internalización
+de la arquitectura y código del mismo. Más aún, introduce muchas veces
+el grave problema de la "multiplataforma", en el que implementar la
+solución en varias plataformas es difícil. Para evitar el riesgo que
+ello introduce, se desarrollará una aplicación desde cero.
+
+\hypertarget{introducciuxf3n-de-la-gamification}{%
+\subsection{Introducción de la
+gamification}\label{introducciuxf3n-de-la-gamification}}
+
+Dentro del objetivo específico de implementación, el último punto en
+particular menciona que discernir qué elementos de gamification
+incorporar es un tema que este \textbf{documento} no resuelve. Queda
+como trabajo para el informe final de \textbf{introducción} del proyecto
+discernir qué elementos se incorporarán.
+
+\hypertarget{multiplataforma}{%
+\subsection{Multiplataforma}\label{multiplataforma}}
+
+La multiplataforma es un tema fundamental para este proyecto. Mientras
+más multiplataforma sea el proyecto, más fácil será evaluar resultados,
+pues más usuarios tendrán acceso a la aplicación desarrollada.
+
+Para disminuir el riesgo de este problema, se ocupará un lenguaje que
+provea como característica el ser multiplataforma. Dos candidatos que
+resuelven este problema son Java (via su librería swing) y Node.js vía
+sus librerías \texttt{electron}\cite{electron} y \texttt{React\ Native}\cite{react-native}.
+
+La solución es simplemente usar Node.js. El que React Native y electron
+provean una arquitectura en la que se contruye interfaces de usuario con
+HTML facilita enormemente la tarea de exportar el código a ambientes
+móviles (iOS/Android) mientras que Electron facilita la multiplataforma
+en aplicaciones de escritorio (macOS/Linux/Windows).
+
+\hypertarget{mediciuxf3n-de-resultados}{%
+\subsection{Medición de resultados}\label{mediciuxf3n-de-resultados}}
+
+Gracias a que la aplicación guarda por sí misma sus estadísticas de uso,
+la medición de resultados se facilita simplemente recolectando estos
+datos bajo consentimiento de sus usuarios.
+
+\newpage
+\hypertarget{metodologuxeda}{%
+\section{Metodología}\label{metodologuxeda}}
+
+En este apartado se describe el trabajo a realizar para cumplir los
+objetivos
+
+\hypertarget{planteamiento-de-elementos-de-gamification-a-incorporar}{%
+\subsection{Planteamiento de elementos de gamification a
+incorporar}\label{planteamiento-de-elementos-de-gamification-a-incorporar}}
+
+El primer paso es decidir qué elementos de juego se va a incorporar a la
+aplicación. Este ítem es lo primero porque ayuda a la planificación
+general del proyecto, contribuyendo a la adaptación al tiempo total de
+desarrollo que, dicho sea de paso, interesa minimizar.
+
+\hypertarget{iterar-los-ciclos-de-desarrollo}{%
+\subsection{Iterar los ciclos de
+desarrollo}\label{iterar-los-ciclos-de-desarrollo}}
+
+Se definió anteriormente 10 hitos que marcan el proceso de desarrollo de
+esta aplicación. En este proceso cada hito supera en funcionalidad al
+anterior y por sobre todo, \textbf{es usable}. Antes de cada iteración
+se debe estimar el tiempo que la implementación tomará, de modo de
+ajustar las horas de trabajo de la aplicación para cumplir el objetivo
+final.
+
+\hypertarget{mediciuxf3n-de-resultados-1}{%
+\subsection{Medición de resultados}\label{mediciuxf3n-de-resultados-1}}
+
+Con al menos la plataforma de escritorio de la aplicación, se prueba la
+aplicación con personas que tengan interés en aplicar la técnica
+pomodoro de manejo de tiempo o bien estén interesadas en aplicarle
+elementos de gamification a su proceso productivo. En este período, se
+miden los resultados completos en una semana completa de trabajo, dos
+veces por separado. Se propone esta metodología para ocupar la primera
+semana como medida base de diagnóstico y acostumbramientos y la segunda
+semana como medición de mejora sobre la técnica.
+
+En términos de la muestra escogida y por asuntos de tiempo, se propone
+una muestra de entre 20 a 30 personas, deseablemente de todas las
+edades, pero -de nuevo-, por asuntos de tiempo, el rango etáreo es
+solamente deseable que sea uniforme.
+
+\hypertarget{planteamiento-de-posibles-extensiones}{%
+\subsection{Planteamiento de posibles
+extensiones}\label{planteamiento-de-posibles-extensiones}}
+
+Dependiendo del tiempo que todo lo anterior haya tomado, puede
+implementarse algunas de las extensiones propuestas en el apéndice o
+exportarse a alguna otra plataforma. Si esto no llegase a ser posible,
+se especificará debidamente cómo se puede extender esta aplicación para
+otros contextos.
+
+\newpage
+\section{Apéndice}
+\label{sec:apendice}
+
+\subsection{Posibles extensiones}
+\label{subsec:posibles-extensiones}
+
+Pomodoro no es el único contexto en el que este trabajo puede ser
+útil, en este trabajo se ha escogido como la técnica para medir la
+efectividad de aplicar elementos de gamification a esta. A
+continuación se mencionan algunos ejemplos en los que esto puede
+también ser útil.
+
+\subsubsection{Deportes}
+
+Existen algunas aplicaciones ya mencionadas\footnote{Zombies, Run!},
+que incorporan elementos de gamification en deportes, pero se ha
+dejado de lado el factor humano y la influencia de mensajes de seres
+queridos sobre la persona que utiliza estas aplicaciones. Un tema de
+estudio relacionado es cómo afecta una aplicación como la que este
+trabajo describe sobre deportistas y si efectivamente los ayuda a
+mejorar su rendimiento.
+
+\subsubsection{Hospitales}
+
+Las personas en situación hospitalaria también pueden ser objeto de
+estudio de una aplicación como ésta, sobre todo en pacientes que de
+alguna forma pueden sentirse solos. Proveer un mecanismo de
+gamification combinado con mensajes dirigidos podría mostrar un
+aumento en el ánimo.
+
+\newpage
+\section{Referencias}
+\printbibliography[heading=none]
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
