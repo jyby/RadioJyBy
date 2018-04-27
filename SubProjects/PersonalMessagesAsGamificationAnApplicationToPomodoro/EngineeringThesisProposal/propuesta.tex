@@ -2,6 +2,8 @@
 \PassOptionsToPackage{hyphens}{url}
 %
 \documentclass[12pt,letterpaper]{report}
+\usepackage{version} 
+\excludeversion{TODO}
 \usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \usepackage[spanish]{babel}
@@ -92,59 +94,29 @@ Applicacion a la técnica  Pomodoro.}
 \end{figure}
 \maketitle
 
+\begin{abstract}
+En este trabajo se busca comparar la efectividad de incorporar mensajes personalizados (texto, audio y potencialemente video), musica y otras técnicas de \emph{gamification} para mejora la adhesión de los usuarios a los principios de la metodologia de manejo de trabajo \emph{pomodoro}~\cite{cirillo2009pomodoro}. El resultado del trabajo consistara en ambos un producto permitiendo a un usuario de incorporar todas las tecnicas implementadas a su flujo de trabajo, y en un estudio de la efectividad de estas tecnicas separadas.
+\end{abstract}
+
 \tableofcontents
 \newpage
 
 \hypertarget{motivaciuxf3n}{%
 \section{Motivación}\label{motivaciuxf3n}}
 
-En este trabajo se busca comprobar la efectividad de incorporar música,
-mensajes de audio personalizados y la técnica de \emph{gamification}
-sobre la técnica de manejo de tiempo \emph{pomodoro}. Para explicar la
-motivación de este trabajo, primero se introducen los conceptos
-anteriormente mencionados y luego se plantea un conjunto de hipótesis
-sobre el comportamiento de los usuarios.
+La metodologia llamada ``\emph{Pomodoro}''~\cite{cirillo2009pomodoro} es una técnica de manejo de trabajo apuntando al aumento de la productividad. En una primera instancia, se trata de dividir el trabajo en períodos de alrededor de 25 minutos para luego tomar una pausa corta que típicamente dura 5 minutos. A esta ventana de tiempo (30 minutos) se le asigna una \emph{unidad} llamada Pomodoro.  Luego de cumplir cuatro pomodoros, la persona puede tomar un descanso más largo de 25 ó 30 minutos. Finalmente, después de ese largo descanso, se repite el ciclo. En un nivel de aplicación mas profondo, se pide al usuario de asignar una cantidad de unidades de tiempo a cada tarea al inicio del periodo de trabajo (sea un dia, o una semana), y de revisar la cualidad de su asignacion al fin del periodo de trabajo, de maneja a mejorar sus estimaciones futuras.
 
-\textbf{Pomodoro}\cite{cirillo2009pomodoro} es una técnica de manejo de tiempo diseñada para
-aumentar la productividad del trabajo de las personas. Se trata de
-dividir el trabajo en períodos de alrededor de 25 minutos para luego
-tomar una pausa corta que típicamente dura 5 minutos. A esta ventana de
-tiempo (30 minutos) se le asigna una \emph{unidad} llamada Pomodoro.
-Luego de cumplir cuatro pomodoros, la persona puede tomar un descanso
-más largo de 25 ó 30 minutos. Finalmente, después de ese largo descanso,
-se repite el ciclo.
+Las tecnicas de \emph{gamification}\footnote{En Español esto se diría "ludificación". En este trabajo simplemente se dirá "gamification".}~\cite{deterding2011gamification} consisten en la aplicación de elementos ludicos, en general mas propios a juegos, a contextos dichos ``de trabajo'' con un producto util.  Desarollada desde los 80s, este tecnica a encontrado muchas aplicaciones, que sea en Marketing, educación, trabajo, o salud.
+\begin{TODO}
+Nicolas: ADD references here!
+\end{TODO}
+Se espera que aplicar la \emph{gamification} a ciertos procesos ayuda a la productividad y motivación de la persona, pero se demostro las limitaciones de esta estrategia~\cite{hamari2014gamification}.
+%
+Aun que varias tecnicas de gamification consideran varios tipos de ``rewards'', no se ha explorado hasta la fecha el concepto de ``rewards'' en forma de musica, o de \emph{mensajes electronicos personalizados} (de texto, audio o video), tales que los democratizados por applicaciones como \texttt{WhatsApp} o \texttt{Telegram}.
 
-La *gamification*\footnote{En Español esto se diría "ludificación". En
-  este trabajo simplemente se dirá "gamification".}\cite{deterding2011gamification} es la aplicación de
-elementos propios de los juegos a contextos fuera de éstos. Tiene muchas
-aplicaciones\footnote{Marketing, trabajo, educación, salud, entre
-  varias otras más.}. La literatura al respecto
-sugiere que en la mayoría de los casos aplicar la \emph{gamification} a
-ciertos procesos ayuda, entre otros, a la productividad y motivación de
-la persona, aunque esto \textbf{no es necesariamente
-cierto}\cite{hamari2014gamification}.
-
-Los \textbf{mensajes dirigidos} explícitamente a una persona hoy son una
-realidad gracias a aplicaciones como WhatsApp o Telegram. Gracias a
-estas aplicaciones, los mensajes de seres queridos están al alcance del
-bolsillo. Si al proceso de escuchar música se le incorporara estos
-elementos, se podría fabricar un producto parecido a una radio, en que
-se intercalan mensajes dirigidos con música.
-
-Ya que se sabe que el aumento de productividad y motivación de las
-personas no es seguro aplicando la gamification, este trabajo busca
-responder si es que la aplicacion de elementos propios del juego a la
-técnica pomodoro produce mejoras en la productividad y enseña la
-correcta aplicación de la técnica.
-
-También, se busca comprobar si la reproducción de mensajes de sus seres
-queridos en los dispositivos de sus usuarios puede aumentar la
-productividad de igual forma o no. Todo esto en un contexto de audio y
-la aplicación de la técnica pomodoro.
-
-La hipótesis de este trabajo es que mezclando la gamification, la música
-y mensajes dirigidos, los usuarios mejorarán la aplicación de la técnica
-pomodoro y como consecuencia también aumentarán su productividad.
+\paragraph{Hypothesis}
+El uso de tecnicas de gamificacion (tradicionales o basadas en musica o mensajes personales) podria ayudar a algunos usuarios a \emph{apprender} y \emph{seguir} la methodologia de trabajo de \emph{pomodoro}?
+A dentro de estas tecnicas, cuales son las mas potentes para la mayoridad de los usuarios?
 
 \newpage
 \hypertarget{posibles-soluciones}{%
@@ -168,8 +140,8 @@ hay reproductores que toman música local como \emph{VLC},
 \emph{Clementine}, \emph{Amarok}, etc. La lista es larga.
 
 El intercambio de mensajes también es un problema resuelto. Desde el
-antiguo \emph{MSN Plus} hasta los actuales \emph{WhatsApp},
-\emph{Telegram} y \emph{LINE}, por nombrar algunos.
+antiguo \emph{MSN Plus} hasta los actuales \emph{\texttt{WhatsApp}},
+\emph{\texttt{Telegram}} y \emph{LINE}, por nombrar algunos.
 
 Las aplicaciones o plataformas que incorporan elementos del juego para
 realizar tareas hoy no son nada nuevo. Dependiendo del contexto, existen
@@ -192,7 +164,7 @@ Aún así, no hay ningún producto que unifique todas estas cosas:
 
 Una solución evidente a esto es simplemente integrar aplicaciones que
 resuelvan estos temas por separado. Escuchar algunos mensajes de aliento
-desde WhatsApp, usar Tomato Timer para Pomodoro, VLC o Spotify para
+desde \texttt{WhatsApp}, usar Tomato Timer para Pomodoro, VLC o Spotify para
 escuchar música y Habitica para incorporar los elementos del juego. Si
 bien en papel esto resuleve el problema planteado, es impracticable para
 el estudio que se requiere. En realizar tareas que se podrían hacer con
