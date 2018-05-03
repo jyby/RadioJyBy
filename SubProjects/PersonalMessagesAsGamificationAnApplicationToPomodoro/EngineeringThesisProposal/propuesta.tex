@@ -209,32 +209,30 @@ específicos que ayudan a cumplir ese objetivo general.
 \hypertarget{objetivo-general}{%
 \subsection{Objetivo general}\label{objetivo-general}}
 
-Proveer un servicio de música que incorpore mensajes personalizados y
-elementos del juego (gamification) a la técnica pomodoro con el objetivo
-de aumentar la productividad de su usuario.
+Proveer un servicio de apoyo al método Pomodoro que incorpore música, mensajes
+personalizados de texto, audio, video y elementos del juego (gamification) con
+el objetivo de aumentar la productividad de su usuario.
 
 \hypertarget{objetivos-especuxedficos}{%
 \subsection{Objetivos específicos}\label{objetivos-especuxedficos}}
 
 \hypertarget{obtener-un-reproductor-de-muxfasica-extensible}{%
-\subsubsection{Obtener un reproductor de música
-extensible}\label{obtener-un-reproductor-de-muxfasica-extensible}}
+\subsubsection{Obtener un reproductor de sonido
+extensible}\label{obtener-un-reproductor-de-sonido-extensible}}
 
-Teniendo en cuenta que toda esta aplicación gira en torno al audio, un
-reproductor de audio aparece como el componente central del proyecto.
 Por la inherente extensibilidad de uso de la aplicación es imperioso que
 la arquitectura que presente este reproductor permita un desarrollo de
 extensiones fácilmente. Si bien tomar una aplicación de reproducción ya
 existente parece el camino más fácil, el comprender e indagar en el
 código puede tomar parte importante del tiempo del proyecto.
 
-\hypertarget{implementaciuxf3n-de-un-reproductor-de-muxfasica-que-incorpore-mensajes-dirigidos}{%
+\hypertarget{implementaciuxf3n-de-un-reproductor-de-muxfasica-que-incorpore-mensajes-personales}{%
 \subsubsection{Implementación de un reproductor de música que incorpore
 mensajes
 personales}\label{implementaciuxf3n-de-un-reproductor-de-muxfasica-que-incorpore-mensajes-dirigidos}}
 
 Este proyecto contempla la implementación un reproductor de música que
-incluye interfaz de usuario gráfica, es capaz de intercalar mensajes
+incluye una interfaz de usuario minimal, es capaz de intercalar mensajes
 personales a su usuario según elementos de gamification a definir y
 muestra notificaciones relevantes de Pomodoro. A continuación se
 presenta de manera muy resumida los hitos tentativos de desarrollo del
@@ -351,16 +349,17 @@ La multiplataforma es un tema fundamental para este proyecto. Mientras
 más multiplataforma sea el proyecto, más fácil será evaluar resultados,
 pues más usuarios tendrán acceso a la aplicación desarrollada.
 
-Para disminuir el riesgo de este problema, se ocupará un lenguaje que
-provea como característica el ser multiplataforma. Dos candidatos que
-resuelven este problema son Java (via su librería swing) y Node.js vía
-sus librerías \texttt{electron}\cite{electron} y \texttt{React\ Native}\cite{react-native}.
+Para disminuir el riesgo de este problema, se ocupará un lenguaje que provea
+como característica el ser multiplataforma. Dos candidatos que resuelven este
+problema son Java (via su librería \texttt{swing}) y \texttt{Node.js} vía sus
+librerías \texttt{electron}\cite{electron} y \texttt{React\
+Native}\cite{react-native}.
 
-La solución es simplemente usar Node.js. El que React Native y electron
-provean una arquitectura en la que se contruye interfaces de usuario con
-HTML facilita enormemente la tarea de exportar el código a ambientes
-móviles (iOS/Android) mientras que Electron facilita la multiplataforma
-en aplicaciones de escritorio (macOS/Linux/Windows).
+La solución es simplemente usar \texttt{Node.js}. El que \texttt{React Native}
+y \texttt{electron} provean una arquitectura en la que se contruye interfaces
+de usuario con HTML facilita enormemente la tarea de exportar el código a
+ambientes móviles (iOS/Android) mientras que \texttt{Electron} facilita la
+multiplataforma en aplicaciones de escritorio (macOS/Linux/Windows).
 
 \hypertarget{mediciuxf3n-de-resultados}{%
 \subsection{Medición de resultados}\label{mediciuxf3n-de-resultados}}
