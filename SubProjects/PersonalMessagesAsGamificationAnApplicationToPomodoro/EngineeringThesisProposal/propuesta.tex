@@ -67,15 +67,14 @@
 % \cfoot{Universidad de Chile - Facultad de Ciencias Físicas y Matemáticas\\Departamento de Ciencias de la Computación}
 
 \frenchspacing
-\title{
-{\small Introducción al Trabajo de Título \\  Propuesta de tema}
+\title{{\small Introducción al Trabajo de Título \\  Propuesta de tema}
 \\
 {\Huge 
 Mensajes Personales en Gamificación:\\
 Applicacion a la técnica  Pomodoro.} 
 }
-\author{Nicolás Salas V.\\\texttt{nikosalas@gmail.com}\\\texttt{17.478.091-9}\\Tel.: \texttt{(2) 22490790} - \texttt{+56 9 8252 6659}}
-\def\thesection       {\arabic{section}}
+\author{Nicolás Salas V.\\\texttt{nikosalas@gmail.com}\\\texttt{17.478.091--9}\\Tel.: \texttt{(2) 22490790} --- \texttt{+56 9 8252 6659}}
+\def\thesection{\arabic{section}}
 
 \begin{document}
 
@@ -94,7 +93,14 @@ Applicacion a la técnica  Pomodoro.}
 \maketitle
 
 \begin{abstract}
-En este trabajo se busca comparar la efectividad de incorporar mensajes personalizados (texto, audio y potencialmente vídeo), musica y otras técnicas de \emph{gamification} para mejorar la adhesión de los usuarios a los principios de la metodología de manejo de trabajo \emph{pomodoro}~\cite{cirillo2009pomodoro}. El resultado del trabajo consistirá en dos partes: un producto permitiendo a un usuario de incorporar todas las técnicas implementadas a su flujo de trabajo, y  un estudio de la efectividad de estas técnicas separadas.
+    En este trabajo se busca comparar la efectividad de incorporar mensajes
+    personalizados (texto, audio y potencialmente vídeo), musica y otras
+    técnicas de \emph{gamification} para mejorar la adhesión de los usuarios a
+    los principios de la metodología de manejo de trabajo
+    \emph{pomodoro}~\cite{cirillo2009pomodoro}. El resultado del trabajo
+    consistirá en dos partes: un producto permitiendo a un usuario de
+    incorporar todas las técnicas implementadas a su flujo de trabajo, y  un
+    estudio de la efectividad de estas técnicas separadas.
 \end{abstract}
 
 \tableofcontents
@@ -103,20 +109,43 @@ En este trabajo se busca comparar la efectividad de incorporar mensajes personal
 \hypertarget{motivaciuxf3n}{%
 \section{Motivación}\label{motivaciuxf3n}}
 
-La metodología llamada ``\emph{Pomodoro}''~\cite{cirillo2009pomodoro} es una técnica de manejo de trabajo que apunta al aumento de la productividad. En una primera instancia, se trata de dividir el trabajo en períodos de alrededor de 25 minutos para luego tomar una pausa corta que típicamente dura 5 minutos. A esta ventana de tiempo (30 minutos) se le asigna una \emph{unidad} llamada Pomodoro.  Luego de cumplir cuatro pomodoros, la persona puede tomar un descanso más largo de 25 ó 30 minutos. Finalmente, después de ese largo descanso, se repite el ciclo. En un nivel de aplicación mas profundo, se pide al usuario de asignar una cantidad de unidades de tiempo a cada tarea al inicio del periodo de trabajo (sea un día, o una semana), y de revisar la cualidad de su asignación al fin del periodo de trabajo, de maneja a mejorar sus estimaciones futuras.
+La metodología llamada ``\emph{Pomodoro}''~\cite{cirillo2009pomodoro} es una
+técnica de manejo de trabajo que apunta al aumento de la productividad. En una
+primera instancia, se trata de dividir el trabajo en períodos de alrededor de
+25 minutos para luego tomar una pausa corta que típicamente dura 5 minutos. A
+esta ventana de tiempo (30 minutos) se le asigna una \emph{unidad} llamada
+Pomodoro.  Luego de cumplir cuatro pomodoros, la persona puede tomar un
+descanso más largo de 25 ó 30 minutos. Finalmente, después de ese largo
+descanso, se repite el ciclo. En un nivel de aplicación mas profundo, se pide
+al usuario de asignar una cantidad de unidades de tiempo a cada tarea al inicio
+del periodo de trabajo (sea un día, o una semana), y de revisar la cualidad de
+su asignación al fin del periodo de trabajo, de maneja a mejorar sus
+estimaciones futuras.
 
-Las técnicas de \emph{gamification}\footnote{En Español esto se diría "ludificación". En este trabajo simplemente se dirá "gamification".}~\cite{deterding2011gamification} consisten en la aplicación de elementos lúdicos, en general mas propios a juegos, a contextos dichos ``de trabajo'' con un producto útil.  Desarrollada desde los 80s, este técnica ha encontrado muchas aplicaciones, que sea en Marketing, educación, trabajo, o salud.
-\begin{TODO}
-Nicolás: ADD references here!
-\end{TODO}
-Se espera que aplicar la \emph{gamification} a ciertos procesos ayuda a la productividad y motivación de la persona, pero se ha demostrado las limitaciones de esta estrategia~\cite{hamari2014gamification}.
-%
-Aunque varias técnicas de gamification consideran varios tipos de ``rewards'', no se ha explorado hasta la fecha el concepto de ``rewards'' en forma de musica, o de \emph{mensajes electrónicos personalizados} (de texto, audio o vídeo), tales como los que han sido  democratizados por aplicaciones como \texttt{WhatsApp} o \texttt{Telegram}.
+Las técnicas de \emph{gamification}\footnote{En Español esto se diría
+``ludificación''. En este trabajo simplemente se dirá
+``gamification''.}~\cite{deterding2011gamification} consisten en la aplicación de
+elementos lúdicos, en general mas propios a juegos, a contextos dichos ``de
+trabajo'' con un producto útil.  Desarrollada desde los 80s, este técnica ha
+encontrado muchas aplicaciones, que sea en Marketing~\cite{hamari2010game},
+educación~\cite{desousa2014systematic-gamification},
+trabajo~\cite{oravec2015gamification}, o salud~\cite{pereira2014gamification-review}.
+Se espera que aplicar la \emph{gamification} a ciertos procesos ayuda a la
+productividad y motivación de la persona, pero se ha demostrado las
+limitaciones de esta estrategia~\cite{hamari2014gamification}.
+
+Aunque varias técnicas de gamification consideran varios tipos de ``rewards'',
+no se ha explorado hasta la fecha el concepto de ``rewards'' en forma de
+musica, o de \emph{mensajes electrónicos personalizados} (de texto, audio o
+vídeo), tales como los que han sido  democratizados por aplicaciones como
+\texttt{WhatsApp} o \texttt{Telegram}.
 
 \paragraph{Hipótesis}
-El uso de técnicas de gamification (tradicionales o basadas en musica o mensajes personales), ?`podría ayudar a algunos usuarios a \emph{aprender} y \emph{seguir} la metodología de trabajo de \emph{pomodoro}?
-?`Dentro de estas técnicas, cuáles son las más potentes para la mayoría de los usuarios?
-?`Cuáles son las más potentes para cada categoría de usuarios?
+El uso de técnicas de gamification (tradicionales o basadas en musica o
+mensajes personales), ¿podría ayudar a algunos usuarios a \emph{aprender} y
+\emph{seguir} la metodología de trabajo de \emph{pomodoro}? ¿Dentro de estas
+técnicas, cuáles son las más potentes para la mayoría de los usuarios? ¿Cuáles
+son las más potentes para cada categoría de usuarios?
 
 \newpage
 \hypertarget{posibles-soluciones}{%
@@ -124,25 +153,29 @@ El uso de técnicas de gamification (tradicionales o basadas en musica o mensaje
 
 Este trabajo esta definido por varios componentes:
 
-\begin{enumerate}
-\tightlist
+\begin{enumerate}\tightlist{}
 \item software de apoyo en el aprendizaje y la aplicación de la metodología \emph{Pomodoro};
 \item (transmisión y) reproducción de \emph{mensajes personalizados} (de texto, audio o vídeo);
 \item reproducción de listas de \emph{música} predefinidas; y 
-\item otras técnicas de Gamification (e.g. puntos, estrellas, ranking, etc...).
+\item otras técnicas de Gamification (e.g.~puntos, estrellas, ranking, etc\ldots).
 \end{enumerate}
 
 Hay múltiples soluciones en cada caso,
 %
-desde reproductores que toman música local como \emph{VLC},
-\emph{Clementine}, \emph{Amarok}; 
+desde reproductores que toman música local como \texttt{VLC},
+\texttt{Clementine}, \texttt{Amarok}; 
 %
-aplicaciones de intercambio de mensajes personalizados como \texttt{MSN Plus},\texttt{WhatsApp},
+aplicaciones de intercambio de mensajes personalizados como \texttt{MSN Plus}, \texttt{WhatsApp},
 \texttt{Telegram} y \texttt{LINE}; y
 %
 aplicaciones de apoyo a la aplicación de la metodología \emph{Pomodoro}. 
 
-Las aplicaciones o plataformas que incorporan elementos del juego para realizar tareas hoy no son nada nuevo. Dependiendo del contexto, existen varias soluciones al problema de \emph{gamificar}\footnote{En español esto sería /ludificar/, pero por consistencia se deja el término en inglés} tareas. Por ejemplo existe \texttt{Habitica} para propósitos generales o \texttt{Zombies, Run!} para deportistas.
+Las aplicaciones o plataformas que incorporan elementos del juego para realizar
+tareas hoy no son nada nuevo. Dependiendo del contexto, existen varias
+soluciones al problema de \emph{gamificar}\footnote{En español esto sería
+\emph{ludificar}, pero por consistencia se deja el término en inglés} tareas. Por
+ejemplo existe \texttt{Habitica}~\cite{habitica} para propósitos generales o
+\texttt{Zombies, Run!}~\cite{zombiesrun} para deportistas.
 
 Aún así, no hay ningún producto que unifique todas estas cosas:
 
@@ -156,7 +189,15 @@ Aún así, no hay ningún producto que unifique todas estas cosas:
   Alterne mensajes  enviados por contactos (que sean de texto, de voz o de vídeo).
 \end{itemize}
 
-Una solución evidente a esto es simplemente integrar aplicaciones que resuelvan estos temas por separado. \texttt{Escuchar} algunos mensajes de aliento desde \texttt{WhatsApp}, usar \texttt{Tomato Timer} para \emph{Pomodoro}, \texttt{VLC} o \texttt{Spotify} para escuchar música y Habitica para incorporar los elementos del juego. Si bien en papel esto resuleve el problema planteado, es impracticable para el estudio que se requiere. En realizar tareas que se podrían hacer con uno o dos clic o secuencias de teclado, se perdería tiempo en los cambios de contexto entre aplicaciones, generando finalmente una pérdida de productividad, que es lo que últimamente se busca mejorar.
+Una solución evidente a esto es simplemente integrar aplicaciones que resuelvan
+estos temas por separado. \texttt{Escuchar} algunos mensajes de aliento desde
+\texttt{WhatsApp}, usar \texttt{Tomato Timer} para \emph{Pomodoro},
+\texttt{VLC} o \texttt{Spotify} para escuchar música y Habitica para incorporar
+los elementos del juego. Si bien en papel esto resuleve el problema planteado,
+es impracticable para el estudio que se requiere. En realizar tareas que se
+podrían hacer con uno o dos clic o secuencias de teclado, se perdería tiempo en
+los cambios de contexto entre aplicaciones, generando finalmente una pérdida de
+productividad, que es lo que últimamente se busca mejorar.
 
 \newpage
 \hypertarget{objetivos-del-proyecto}{%
@@ -168,32 +209,30 @@ específicos que ayudan a cumplir ese objetivo general.
 \hypertarget{objetivo-general}{%
 \subsection{Objetivo general}\label{objetivo-general}}
 
-Proveer un servicio de música que incorpore mensajes personalizados y
-elementos del juego (gamification) a la técnica pomodoro con el objetivo
-de aumentar la productividad de su usuario.
+Proveer un servicio de apoyo al método Pomodoro que incorpore música, mensajes
+personalizados de texto, audio, video y elementos del juego (gamification) con
+el objetivo de aumentar la productividad de su usuario.
 
 \hypertarget{objetivos-especuxedficos}{%
 \subsection{Objetivos específicos}\label{objetivos-especuxedficos}}
 
 \hypertarget{obtener-un-reproductor-de-muxfasica-extensible}{%
-\subsubsection{Obtener un reproductor de música
-extensible}\label{obtener-un-reproductor-de-muxfasica-extensible}}
+\subsubsection{Obtener un reproductor de sonido
+extensible}\label{obtener-un-reproductor-de-sonido-extensible}}
 
-Teniendo en cuenta que toda esta aplicación gira en torno al audio, un
-reproductor de audio aparece como el componente central del proyecto.
 Por la inherente extensibilidad de uso de la aplicación es imperioso que
 la arquitectura que presente este reproductor permita un desarrollo de
 extensiones fácilmente. Si bien tomar una aplicación de reproducción ya
 existente parece el camino más fácil, el comprender e indagar en el
 código puede tomar parte importante del tiempo del proyecto.
 
-\hypertarget{implementaciuxf3n-de-un-reproductor-de-muxfasica-que-incorpore-mensajes-dirigidos}{%
+\hypertarget{implementaciuxf3n-de-un-reproductor-de-muxfasica-que-incorpore-mensajes-personales}{%
 \subsubsection{Implementación de un reproductor de música que incorpore
 mensajes
 personales}\label{implementaciuxf3n-de-un-reproductor-de-muxfasica-que-incorpore-mensajes-dirigidos}}
 
 Este proyecto contempla la implementación un reproductor de música que
-incluye interfaz de usuario gráfica, es capaz de intercalar mensajes
+incluye una interfaz de usuario minimal, es capaz de intercalar mensajes
 personales a su usuario según elementos de gamification a definir y
 muestra notificaciones relevantes de Pomodoro. A continuación se
 presenta de manera muy resumida los hitos tentativos de desarrollo del
@@ -289,7 +328,7 @@ El discernir entre usar un reproductor hecho y consolidado versus
 desarrollar un reproductor desde cero también representa un problema.
 Usar un reproductor ya hecho introduce el problema de la internalización
 de la arquitectura y código del mismo. Más aún, introduce muchas veces
-el grave problema de la "multiplataforma", en el que implementar la
+el grave problema de la ``multiplataforma'', en el que implementar la
 solución en varias plataformas es difícil. Para evitar el riesgo que
 ello introduce, se desarrollará una aplicación desde cero.
 
@@ -310,16 +349,17 @@ La multiplataforma es un tema fundamental para este proyecto. Mientras
 más multiplataforma sea el proyecto, más fácil será evaluar resultados,
 pues más usuarios tendrán acceso a la aplicación desarrollada.
 
-Para disminuir el riesgo de este problema, se ocupará un lenguaje que
-provea como característica el ser multiplataforma. Dos candidatos que
-resuelven este problema son Java (via su librería swing) y Node.js vía
-sus librerías \texttt{electron}\cite{electron} y \texttt{React\ Native}\cite{react-native}.
+Para disminuir el riesgo de este problema, se ocupará un lenguaje que provea
+como característica el ser multiplataforma. Dos candidatos que resuelven este
+problema son Java (via su librería \texttt{swing}) y \texttt{Node.js} vía sus
+librerías \texttt{electron}\cite{electron} y \texttt{React\
+Native}\cite{react-native}.
 
-La solución es simplemente usar Node.js. El que React Native y electron
-provean una arquitectura en la que se contruye interfaces de usuario con
-HTML facilita enormemente la tarea de exportar el código a ambientes
-móviles (iOS/Android) mientras que Electron facilita la multiplataforma
-en aplicaciones de escritorio (macOS/Linux/Windows).
+La solución es simplemente usar \texttt{Node.js}. El que \texttt{React Native}
+y \texttt{electron} provean una arquitectura en la que se contruye interfaces
+de usuario con HTML facilita enormemente la tarea de exportar el código a
+ambientes móviles (iOS/Android) mientras que \texttt{Electron} facilita la
+multiplataforma en aplicaciones de escritorio (macOS/Linux/Windows).
 
 \hypertarget{mediciuxf3n-de-resultados}{%
 \subsection{Medición de resultados}\label{mediciuxf3n-de-resultados}}
@@ -383,11 +423,9 @@ se especificará debidamente cómo se puede extender esta aplicación para
 otros contextos.
 
 \newpage
-\section{Apéndice}
-\label{sec:apendice}
+\section{Apéndice}\label{sec:apendice}
 
-\subsection{Posibles extensiones}
-\label{subsec:posibles-extensiones}
+\subsection{Posibles extensiones}\label{subsec:posibles-extensiones}
 
 Pomodoro no es el único contexto en el que este trabajo puede ser
 útil, en este trabajo se ha escogido como la técnica para medir la
@@ -397,7 +435,7 @@ también ser útil.
 
 \subsubsection{Deportes}
 
-Existen algunas aplicaciones ya mencionadas\footnote{Zombies, Run!},
+Existen algunas aplicaciones ya mencionadas~\cite{zombiesrun},
 que incorporan elementos de gamification en deportes, pero se ha
 dejado de lado el factor humano y la influencia de mensajes de seres
 queridos sobre la persona que utiliza estas aplicaciones. Un tema de
