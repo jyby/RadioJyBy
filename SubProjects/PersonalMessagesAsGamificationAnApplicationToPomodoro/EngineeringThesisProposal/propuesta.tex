@@ -141,11 +141,11 @@ pomodoro sobre sus usuarios, se necesita tener una aplicación que, primero, per
 y provea de mensajes útiles al usuario y, segundo, que permita tomar estadísticas de su uso, de modo de poder medir el
 impacto de la aplicación de las técnicas de gamification introducidas.
 
-Dentro de aplicaciones existentes que se pueden usar para esto hay bastantes~\cite{forest-stayfocused, focus-extension,
-pomodorium, teamviz}. De hecho, algunas de ellas ya incorporan elementos de gamification o elementos de estadística. Sin
-embargo, no se ha demostrado seriamente la eficacia de la aplicación de elementos de gamification sobre
-Pomodoro~\cite{hamari2014gamification}. Este trabajo busca discernir si dicha aplicación es positiva, negativa, o no
-tiene impacto alguno.
+Dentro de aplicaciones existentes que se pueden usar para pomodoro hay bastantes~\cite{forest-stayfocused,
+focus-extension, pomodorium, teamviz}. De hecho, dentro de las recién citadas algunas de ellas ya incorporan elementos
+de gamification o elementos de estadística. Sin embargo, no se ha demostrado seriamente la eficacia de la aplicación de
+elementos de gamification sobre Pomodoro~\cite{hamari2014gamification}. Este trabajo busca discernir si dicha aplicación
+es positiva, negativa, o no tiene impacto alguno.
 
 Por una parte, medir la eficiencia de pomodoro es una tarea que aplicaciones ya realizan, aunque no de forma
 sistemática. Por ejemplo, TeamViz~\cite{teamviz} muestra la cantidad de pomodoros cumplidos y permite asociarlas con
@@ -157,9 +157,9 @@ usuarios, Por ejemplo existe \texttt{Habitica}~\cite{habitica} para propósitos 
 
 Por último, un elemento de gamification que se propone en este trabajo es abordar la incorporación de mensajes
 personales (de texto, audio o video) como recompensa por cumplir objetivos del método pomodoro. El usuario podrá leer,
-ver o escuchar estos mensajes si cumple algunas metas predefinidas. Por supuesto, puede haber otros elementos de
-gamification que se incorporen a esta metodología de asignación de recompensas, pero por ahora sólo se define lo que se
-ha dicho anteriormente.
+ver o escuchar estos mensajes solamente si cumple algunas metas predefinidas. Por supuesto, puede haber otros elementos
+de gamification que se incorporen a esta metodología de asignación de recompensas, pero por ahora sólo se define lo que
+se ha dicho anteriormente.
 
 Una solución que se puede usar para medir la eficiencia y el apego a la técnica pomodoro es simplemente integrar
 aplicaciones que resuelvan estos temas por separado. Escuchar algunos mensajes personalizados desde \texttt{WhatsApp},
@@ -197,19 +197,19 @@ productividad de la persona.
 Dentro de los hitos de desarrollo de la aplicación que involucran este objetivo se encuentran:
 
 \begin{enumerate}\tightlist{}
-  \item Reproductor minimal: Puede reproducir música y archivos de voz personales al usuario de forma intercalada. Sin
-    interfaz de usuario.
-  \item Pomodoro: Puede diferenciar entre música para concentrarse y música para descansar, anuncia pausas cortas,
-    largas y fines de descansos.
-  \item Ajuste de parámetros: Es capaz de leer parámetros de configuración de pomodoro y personales desde un archivo de
+  \item \textbf{Reproductor minimal}: Puede reproducir sonido desde carpetas indicadas por el usuario. Intercala entre
+    archivos de las carpetas.
+  \item \textbf{Pomodoro}: Puede tomar tiempos de trabajo y de descansos largos y cortos. Anuncia via voz y/o
+    notificaciones los momentos de descansos y fines de pausas largas o cortas.
+  \item \textbf{Ajuste de parámetros}: Es capaz de leer parámetros de configuración de pomodoro y personales desde un archivo de
     configuración. Todavía no hay interfaz de usuario.
-  \item Interfaz de usuario minimal: Se puede cambiar opciones por medio de una interfaz gráfica minimal. Los cambios
+  \item \textbf{Interfaz de usuario minimal}: Se puede cambiar opciones por medio de una interfaz gráfica minimal. Los cambios
     son reflejados en el archivo de configuración.
-  \item Bloqueo de estación de trabajo: La interfaz de usuario (en adelante UI) avisa sobre hitos importantes como
+  \item \textbf{Bloqueo de estación de trabajo}: La interfaz de usuario (en adelante UI) avisa sobre hitos importantes como
     pausas cortas y largas, fin de descanso. También puede bloquear la pantalla bajo autorización del usuario.
-  \item Modificación del flujo: Permite las opciones de saltarse o postergar pausas por el usuario. Por supuesto esto no
+  \item \textbf{Modificación del flujo}: Permite las opciones de saltarse o postergar pausas por el usuario. Por supuesto esto no
     bloquea la estación de trabajo.
-  \item Implementación en plataformas de escritorio: La aplicación cuenta con una UI funcional no necesariamente gráfica
+  \item \textbf{Implementación en plataformas de escritorio}: La aplicación cuenta con una UI funcional no necesariamente gráfica
     en macOS, Linux y Windows.
 \end{enumerate}
 
@@ -223,12 +223,15 @@ implementado.
 Los hitos de desarrollo que definen este objetivo son:
 
 \begin{enumerate}\tightlist{}
-  \item Generación de estadísticas: El programa detecta los pomodoros cumplidos en un día y sus fracciones, la cantidad
-    de pausas saltadas, la cantidad de tiempo de trabajo que debió ser descanso y atrasos en las pausas. Estos datos se
-    guardan en un archivo para conocimiento del usuario y para medir resultados.
-  \item Grabado de comentarios: Los usuarios pueden intercambiar comentarios grabados por ellos mismos según categorías
-    (pausas largas, cortas y fines de descanso). La aplicación tiene opción de agregar, cambiar o eliminar archivos y
-    ofrece la posibilidad de cambiar de categoría las grabaciones.
+  \item \textbf{Grabado de comentarios}: Los usuarios pueden grabar comentarios según la categoría del sonido. Ellas
+    son: Anuncio de pausas cortas, anuncio de pausas largas, anuncio de descansos, anuncio de fines de descanso y sonidos
+    personalizados para otros usuarios (recompensas).
+  \item \textbf{Edición de comentarios}: Los usuarios pueden editar sus comentarios, cambiar la categoría de sus sonidos
+    o eliminar sus grabaciones.
+  \item \textbf{Interacción entre usuarios}: Los usuarios pueden intercambiar mensajes entre ellos según sus categorías.
+    Los mensajes que tienen como propósito ser entregados como recompensa quedarán como tal.
+  \item \textbf{Implementación de recompensas}: Los usuarios reciben sus recompensas según cantidad de pomodoros cumplidos,
+    metas propias y apego el método (esto es, sin atrasos ni postergaciones de pausas).
 \end{enumerate}
 
 \subsubsection{Medir resutados de productividad}\label{medir-resultados-de-productividad}
@@ -240,9 +243,12 @@ las opiniones de los mismos.
 Los hitos que definen este objetivo son:
 
 \begin{enumerate}\tightlist{}
-  \item Recopilación de datos: Se recopila y se agregan todos los datos que la aplicación guarda sobre la productividad
+  \item \textbf{Generación de estadísticas}: El programa detecta los pomodoros cumplidos en un día y sus fracciones, la cantidad
+    de pausas saltadas, la cantidad de tiempo de trabajo que debió ser descanso y atrasos en las pausas. Estos datos se
+    guardan en un archivo para conocimiento del usuario y para medir resultados.
+  \item \textbf{Recopilación de datos}: Se recopila y se agregan todos los datos que la aplicación guarda sobre la productividad
     de los usuarios.
-  \item Presentación de resultados: Se contrasta estadísticamente los datos y se comprueba si la hipótesis del trabajo
+  \item \textbf{Presentación de resultados}: Se contrasta estadísticamente los datos y se comprueba si la hipótesis del trabajo
     es correcta o no. Esto es, si la aplicación de gamification ayuda a los usuarios a aprender y mantener los
     principios de pomodoro y si la productividad aumenta al aplicar gamification.
 \end{enumerate}
@@ -264,7 +270,8 @@ el desarrollo del trabajo.
 \subsubsection{Reproductor minimal}
 
 El producir un reproductor de audio minimal permitirá a la aplicación incorporar el elemento de gamification propuesto
-en forma de audio, además de anunciar eventos relacionados a pomodoro como pausas largas y cortas y descansos.
+en forma de audio, anunciar eventos relacionados a pomodoro como pausas largas y cortas y descansos y también permitirá
+al usuario escuchar música local intercalada con eventos importantes de pomodoro si así lo desea.
 
 \subsubsection{Pomodoro}
 
@@ -325,6 +332,31 @@ Con el objetivo de hacer esta aplicación ubicua, será lanzada para todas las p
 Windows, macOS y Linux. La interfaz de usuario será minimal pero ampliamente funcional.
 
 
+\subsubsection{Grabado de comentarios}
+
+El grabado de comentarios en una característica fundamental del programa. Tenerla permite que se empiece a implementar
+la gamification, pues a medida que avance el desarrollo los comentarios grabados se pueden reproducir o compartir con
+otros usuarios de la aplicación. Las categorías de grabado son: Anuncio de pausas cortas, anuncio de
+pausas largas, anuncio de descansos, anuncio de fines de descanso y sonidos personalizados para otros usuarios
+(recompensas).
+
+\subsubsection{Edición de comentarios}
+
+Los comentarios tienen ciertos \emph{tags}, que fueron enunciados anteriormente. Un usuario puede equivocarse al
+categorizar una grabación o puede querer simplemente eliminar sus grabaciones.
+
+\subsubsection{Interacción entre usuarios}
+
+Los usuarios pueden intercambiar mensajes entre ellos según sus categorías. Los mensajes que tienen como propósito ser
+entregados como recompensa quedarán como tal. El intercambio es otro paso fundamental de gamification. Con él los usuarios
+pueden motivar a otras usuarios con mensajes previamente grabados.
+
+\subsubsection{Implementación de recompensas}
+
+Lo último que quedaría es la implementación de \textbf{la entrega de recompensas} a los usuarios según reglas: por
+ejemplo, pomodoros cumplidos, disminución de atrasos o metas propias de los usuarios. Con este hito implementado los
+usuarios finalmente podrán experimentar la gamification en pomodoro.
+
 \subsection{Soluciones a posibles riesgos del proyecto}
 
 Para disminuir el riesgo del proyecto, a continuación se introduce posibles soluciones a problemas que pueden, en
@@ -333,27 +365,25 @@ primera instancia, no ser triviales de resolver.
 
 \subsubsection{Multiplataforma}\label{multiplataforma}
 
-La multiplataforma es un tema fundamental para este proyecto. Mientras
-más multiplataforma sea el proyecto, más fácil será evaluar resultados,
-pues más usuarios tendrán acceso a la aplicación desarrollada.
+La multiplataforma es un tema fundamental para este proyecto. Mientras más multiplataforma sea el proyecto, más fácil
+será evaluar resultados, pues más usuarios tendrán acceso a la aplicación desarrollada.
 
 Para disminuir el riesgo de este problema, se ocupará un lenguaje que provea como característica el ser multiplataforma.
 Dos candidatos que resuelven este problema son Java (via su librería \texttt{swing}~\cite{javaswing}) y
 \texttt{Node.js}~\cite{nodejs} vía sus librerías \texttt{electron}~\cite{electron} y \texttt{React\
 Native}~\cite{react-native}.
 
-La solución es simplemente usar \texttt{Node.js}. El que \texttt{React Native}
-y \texttt{electron} provean una arquitectura en la que se contruye interfaces
-de usuario con HTML facilita enormemente la tarea de exportar el código a
-ambientes móviles (iOS/Android) mientras que \texttt{Electron} facilita la
-multiplataforma en aplicaciones de escritorio (macOS/Linux/Windows).
+La solución es simplemente usar \texttt{Node.js}. El que \texttt{React Native} y \texttt{electron} provean una
+arquitectura en la que se contruye interfaces de usuario con HTML facilita enormemente la tarea de exportar el código a
+ambientes móviles (iOS/Android) mientras que \texttt{Electron} facilita la multiplataforma en aplicaciones de escritorio
+(macOS/Linux/Windows).
 
 \subsubsection{Bloqueo de estación de trabajo}\label{bloqueo-de-estacion-de-trabajo}
 
-Podría parecer que este es un problema que no se resuelve fácilmente. Workrave es un programa licenciado bajo la GNU
-General Public License v3 que resuelve este problema. Tomar la parte de este programa que resuelve este problema
-disminuye la incertidumbre sobre cómo resolver este problema, pues, aunque pueda haber otras soluciones, ya existe una
-forma de abordar el problema \emph{a priori}.
+Podría parecer que este es un problema que no se resuelve fácilmente. Workrave~\cite{workrave} es un programa licenciado
+bajo la GNU General Public License v3 que resuelve este problema. Tomar la parte de este programa que resuelve este
+problema disminuye la incertidumbre sobre cómo resolver este problema, pues, aunque pueda haber otras soluciones, ya
+existe una forma de abordar el problema \emph{a priori}.
 
 \newpage
 \section{Metodología}\label{metodologuxeda}
